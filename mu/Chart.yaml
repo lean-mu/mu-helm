@@ -1,0 +1,39 @@
+name: fn
+apiVersion: v2
+version: 0.1.0
+appVersion: 0.0.161
+description: The lean serverless platform
+keywords:
+- faas
+- fn
+- containers
+- functions
+- serverless
+home: http://fnproject.io/
+icon: http://fnproject.io/images/fn-300x125.png
+sources:
+- https://github.com/lean-mu/mu-helm
+- https://github.com/lean-mu/mu
+- https://github.com/lean-mu/ui
+- https://github.com/lean-mu/flow
+maintainers:
+- name: Olivier Refalo
+  email: orefalo@snapcore.com
+engine: gotpl
+dependencies:
+- name: mysql
+  version: 1.6.9
+  repository: https://charts.helm.sh/stable
+- name: grafana
+  version: 6.9.2
+  repository: https://grafana.github.io/helm-charts
+- name: loki
+  version: 2.5.0
+  repository: https://grafana.github.io/helm-charts
+- name: prometheus
+  version: 14.1.1
+  repository: https://prometheus-community.github.io/helm-charts
+- name: vector-agent
+  version: 0.13.1
+  repository: https://packages.timber.io/helm/latest
+

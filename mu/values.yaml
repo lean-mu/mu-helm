@@ -1,0 +1,234 @@
+# Default values for Fn
+imagePullPolicy: Always
+# If non-null, will override the cluster name
+nameOverride: ""
+rbac: true
+# logLevel: info
+logLevel: debug
+
+## Ingress configuration.
+## ref: https://kubernetes.io/docs/user-guide/ingress/
+ingress:
+  enabled: true
+  # if using the same hostname, please ensure contexts differ
+  ui:
+    hostname: fn.mu.internal
+    context: /
+  fn:
+    hostname: fn.mu.internal
+    context: /fn
+  flow:
+    hostname: fn.mu.internal
+    context: /flow
+  api:
+    hostname: fn.mu.internal
+    context: /api
+  grafana:
+    hostname: fn.mu.internal
+    context: /grafana
+  annotations:
+    kubernetes.io/ingress.class: nginx
+
+# secret reference is a k8s secret
+tls:
+  enabled: false
+  default_issuer_name: letsencrypt-staging
+  acme_registration_email: <your@email.com>
+  #  secret_reference: fn-tls
+  server: https://acme-staging-v02.api.letsencrypt.org/directory
+
+# Used to configure a private repository
+fn_docker_auth:
+  enabled: false
+  registries:
+    {
+      "auths":
+        { "http://my.registry.com:80": { "auth": "yourauthbase64here" } },
+    }
+
+# Fn runner deployment definition
+# Nodes in this deployment responsible for the functions execution
+fn_runner:
+  replicas: 3 # number of replicas of Fn runner to deploy, recommended: 3 or greater
+  image: leanmu/runnernode # Fn server image
+  tag: latest # Fn server image tag
+  resources: # K8s computation resources
+    requests:
+      memory: "512Mi"
+      cpu: "250m"
+    limits:
+      memory: "5Gi"
+      cpu: "500m"
+  nodeSelector: {} # K8s node selectors
+  tolerations: [] #K8s mode taint toleration
+  service:
+    grpc_port: 9191 # Fn runner service GRPC port
+    type: ClusterIP # Fn runner service type
+    annotations: {} # Fn runner service annotations
+
+fn_lb:
+  image: leanmu/lbnode
+  tag: latest
+  resources:
+    requests:
+      memory: "256Mi"
+      cpu: "150m"
+    limits:
+      memory: "5Gi"
+      cpu: "300m"
+  nodeSelector: {}
+  tolerations: []
+  service:
+    port: 90
+    type: ClusterIP
+    annotations: {}
+
+fn_api:
+  # image: fnproject/fnserver
+  image: leanmu/apinode
+  tag: latest
+  resources:
+    requests:
+      memory: "256Mi"
+      cpu: "150m"
+    limits:
+      memory: "1Gi"
+      cpu: "300m"
+  nodeSelector: {}
+  tolerations: []
+  service:
+    port: 80
+    type: ClusterIP
+    annotations: {}
+  # env:
+  #   FN_NODE_TYPE: "api"
+
+fn_ui:
+  enabled: true
+  image: fnproject/ui
+  tag: latest
+  resources:
+    requests:
+      memory: "128Mi"
+      cpu: "150m"
+    limits:
+      memory: "1Gi"
+      cpu: "300m"
+  service:
+    port: 4000
+    type: ClusterIP
+    annotations: {}
+
+fn_flow:
+  enabled: false
+  image: fnproject/flow
+  tag: 0.1.87
+  logLevel: info
+  service:
+    port: 80
+    type: ClusterIP
+    annotations: {}
+  resources: # K8s computation resources
+    requests:
+      memory: "1Gi"
+      cpu: "250m"
+    limits:
+      memory: "5Gi"
+      cpu: "500m"
+
+##
+## MySQL chart configuration
+##
+mysql:
+  persistence:
+    enabled: false
+    nodeSelector: mysql-storage
+    ## If defined, volume.beta.kubernetes.io/storage-class: <storageClass>
+    ## Default: volume.alpha.kubernetes.io/storage-class: default
+    ##
+    # storageClass:
+    storageClass: mysql
+    accessMode: ReadWriteOnce
+    size: 8Gi
+  # these parameters are used to init the db upon first startup
+  mysqlDatabase: fndb
+  mysqlUser: fnapp
+  mysqlPassword: boomsauce
+
+vector_agent:
+  sources:
+    fnsyslog:
+      type: syslog
+      rawConfig: |
+        address = "0.0.0.0:4242"
+        max_length = 102400
+        mode = "tcp"
+  sinks:
+    loki_k8s:
+      type: loki
+      inputs: ["kubernetes_logs"]
+      rawConfig: |
+        endpoint = "http://loki.mu.svc.cluster.local:3100"
+        healthcheck = true
+        # https://vector.dev/blog/adaptive-request-concurrency/
+        request.concurrency = "adaptive"
+        encoding.codec = "json"
+        labels.key = "value"
+        labels.key = "{{ event_field }}"
+    loki_syslog:
+      type: loki
+      inputs: ["fnsyslog"]
+      rawConfig: |
+        endpoint = "http://loki.mu.svc.cluster.local:3100"
+        healthcheck = true
+        request.concurrency = "adaptive"
+        encoding.codec = "json"
+        labels.key = "fnsyslog"
+
+grafana:
+  enabled: true
+  replicas: 1
+  image:
+    repository: leanmu/grafana
+    tag: latest
+  grafana.ini:
+    server:
+      root_url: "http://localhost/grafana"
+      serve_from_sub_path: true
+      enable_gzip: true
+  ingress:
+    enabled: false
+  resources:
+    requests:
+      cpu: 50m
+      memory: 64Mi
+    limits:
+      cpu: 100m
+      memory: 128Mi
+  adminUser: admin
+  adminPassword: admin
+  plugins:
+    - grafana-piechart-panel
+  persistence:
+    enabled: false
+
+prometheus:
+  ingress:
+    enabled: false
+  alertmanager:
+    enabled: false
+  kubeStateMetrics:
+    enabled: false
+  nodeExporter:
+    enabled: false
+  pushgateway:
+    enabled: false
+  server:
+    enabled: true
+    resources:
+      requests:
+        cpu: "100m"
+        memory: "256Mi"
+    persistentVolume:
+      enabled: false
+    replicaCount: 1

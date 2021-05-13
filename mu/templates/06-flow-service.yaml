@@ -1,3 +1,4 @@
+{{- if .Values.fn_flow.enabled }}
 apiVersion: v1
 kind: Service
 metadata:
@@ -7,16 +8,18 @@ metadata:
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     heritage: {{ .Release.Service }}
     release: {{ .Release.Name }}
-{{- if .Values.flow.service.annotations }}
+  namespace: {{ .Release.Namespace | quote }}
+{{- if .Values.fn_flow.service.annotations }}
   annotations:
-{{ toYaml .Values.flow.service.annotations | indent 4 }}
+{{ toYaml .Values.fn_flow.service.annotations | indent 4 }}
 {{- end }}
 spec:
-  type: {{ .Values.flow.service.type }}
+  type: {{ .Values.fn_flow.service.type }}
   ports:
     - name: flow
-      port: {{ .Values.flow.service.port }}
+      port: {{ .Values.fn_flow.service.port }}
       targetPort: 8081
   selector:
     app: {{ template "fullname" . }}
     role: flow
+{{- end }}

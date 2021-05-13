@@ -1,0 +1,43 @@
+{{- if .Values.fn_ui.enabled }}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ template "fullname" . }}-ui
+  labels:
+    app: {{ template "fullname" . }}
+    chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+    heritage: {{ .Release.Service }}
+    release: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace | quote }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ template "fullname" . }}
+  template:
+    metadata:
+       labels:
+         app: {{ template "fullname" . }}
+         chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+         heritage: {{ .Release.Service }}
+         release: {{ .Release.Name }}
+         role: ui
+    spec:
+      containers:
+        - name: ui
+          image: {{ .Values.fn_ui.image }}:{{ .Values.fn_ui.tag }}
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          resources:
+{{ toYaml .Values.fn_ui.resources | indent 12 }}
+          ports:
+            - containerPort: {{ .Values.fn_ui.service.port }}
+          env:
+            - name: FN_API_URL
+              value: {{ template "mu.private_api_url". }}
+            - name: LEVEL
+              value: {{ .Values.logLevel }}
+            - name: PORT
+              value: {{ .Values.fn_ui.service.port | quote }}
+            - name: NODE_CONFIG
+              value: '{"logLevel":"$(LEVEL)"}'
+{{- end}}

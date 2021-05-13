@@ -1,4 +1,4 @@
-apiVersion: apps/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ template "fullname" . }}
@@ -7,8 +7,12 @@ metadata:
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     heritage: {{ .Release.Service }}
     release: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace | quote }}
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: {{ template "fullname" . }}
   template:
     metadata:
        labels:
@@ -18,6 +22,9 @@ spec:
          release: {{ .Release.Name }}
          role: fn-service
     spec:
+      {{- if .Values.rbac }}
+      serviceAccountName: {{ .Release.Name }}-service-account
+      {{- end }}
       {{- if .Values.fn_api.nodeSelector }}
       nodeSelector:
 {{ toYaml .Values.fn_api.nodeSelector | indent 8 }}
@@ -35,33 +42,22 @@ spec:
           securityContext:
             privileged: true
           ports:
-          - containerPort: {{ .Values.fn_api.container_port }}
+          - containerPort: {{ .Values.fn_api.service.port }}
           readinessProbe:
             httpGet:
               path: /v2/apps
-              port: {{ .Values.fn_api.container_port }}
+              port: {{ .Values.fn_api.service.port }}
             initialDelaySeconds: 3
             periodSeconds: 3
           env:
-          - name: FN_DB_PASSWD
-            valueFrom:
-              secretKeyRef:
-                name: {{ .Release.Name }}-mysql
-                key: mysql-password
-          - name: FN_DB_HOST
-            value: {{ .Release.Name }}-mysql
-          - name: FN_MQ_HOST
-            value: {{ .Release.Name }}-redis
+          - name: FN_LOG_LEVEL
+            value: {{ .Values.logLevel | quote }}
           - name: FN_PORT
-            value: {{ .Values.fn_api.container_port | quote }}
-          - name: FN_NODE_TYPE
-            value: "api"
+            value: {{ .Values.fn_api.service.port | quote }}
           - name: FN_PUBLIC_LB_URL
-            {{- if .Values.tls.enabled }}
-            value: https://{{ template "fn.public_lb_url" . }}
-            {{- else }}
-            value: http://{{ template "fn.public_lb_url" . }}
-            {{- end }}
+            value: {{ template "mu.public.fn.url" . }}
+          - name: FN_DB_URL
+            value: {{ template "mu.private_mysql_url" . }}
           {{- range $key, $value := .Values.fn_api.env }}
             {{- if $value }}
           - name: {{ $key }}
@@ -69,26 +65,26 @@ spec:
             {{- end }}
           {{- end }}
         - name: runner-lb
-          image: {{ .Values.fn_lb_runner.image }}:{{ .Values.fn_lb_runner.tag }}
+          image: {{ .Values.fn_lb.image }}:{{ .Values.fn_lb.tag }}
           imagePullPolicy: {{ .Values.imagePullPolicy }}
           resources:
-{{ toYaml .Values.fn_lb_runner.resources | indent 12 }}
+{{ toYaml .Values.fn_lb.resources | indent 12 }}
           securityContext:
             privileged: true
           ports:
-          - containerPort: {{ .Values.fn_lb_runner.container_port }}
+          - containerPort: {{ .Values.fn_lb.service.port }}
           env:
-          - name: FN_NODE_TYPE
-            value: "lb"
+          - name: FN_LOG_LEVEL
+            value: {{ .Values.logLevel | quote }}
           - name: FN_GRPC_PORT
-            value: {{ .Values.fn_lb_runner.grpc_port | quote }}
+            value: {{ .Values.fn_runner.service.grpc_port | quote }}
           - name: FN_PORT
-            value: {{ .Values.fn_lb_runner.container_port | quote }}
+            value: {{ .Values.fn_lb.service.port | quote }}
           - name: FN_RUNNER_API_URL
-            value: http://{{ template "fullname" . }}.{{$.Release.Namespace}}.svc.cluster.local:{{ .Values.fn_api.service.port}}
-          - name: FN_RUNNER_ADDRESSES
-            value: {{ template "fullname" . }}-runner.{{$.Release.Namespace}}.svc.cluster.local:{{ .Values.fn_runner.service.grpc_port }}
-          {{- range $key, $value := .Values.fn_lb_runner.env }}
+            value: {{ template "mu.private_api_url" . }}
+          - name: FN_RUNNER_K8S_HEADLESS_SERVICE
+            value: {{ template "fullname" . }}-runner-headless
+          {{- range $key, $value := .Values.fn_lb.env }}
             {{- if $value }}
           - name: {{ $key }}
             value: {{ $value | quote }}

@@ -1,0 +1,25 @@
+{{- if .Values.fn_ui.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ template "fullname" . }}-ui
+  labels:
+    app: {{ template "fullname" . }}
+    chart: {{ .Chart.Name }}-{{ .Chart.Version }}
+    heritage: {{ .Release.Service }}
+    release: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace | quote }}
+{{- if .Values.fn_ui.service.annotations }}
+  annotations:
+{{ toYaml .Values.fn_ui.service.annotations | indent 4 }}
+{{- end }}
+spec:
+  type: {{ .Values.fn_ui.service.type }}
+  ports:
+    - name: ui
+      port: {{ default "4000" .Values.fn_ui.service.port }}
+      targetPort: {{ default "4000" .Values.fn_ui.service.port }}
+  selector:
+    app: {{ template "fullname" . }}
+    role: ui
+{{- end }}

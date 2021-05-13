@@ -1,21 +1,27 @@
+# It's a headless service 
+# in a nutshell Fn comes with it's own optimized 
+# it lacks load balancing or proxying. allowing to leverage the Fn optimized LB and connect to a Pod directly
+
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ template "fullname" . }}-runner
+  name: {{ template "fullname" . }}-runner-headless
   labels:
     app: {{ template "fullname" . }}
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     heritage: {{ .Release.Service }}
     release: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace | quote }}
 {{- if .Values.fn_runner.service.annotations }}
   annotations:
 {{ toYaml .Values.fn_runner.service.annotations | indent 4 }}
 {{- end }}
 spec:
   type: {{ .Values.fn_runner.service.type }}
+  clusterIP: None
   ports:
     - name: grpc
-      port: {{ .Values.fn_runner.grpc_port }}
+      port: {{ .Values.fn_runner.service.grpc_port }}
       targetPort: {{ .Values.fn_runner.service.grpc_port }}
   selector:
     app: {{ template "fullname" . }}

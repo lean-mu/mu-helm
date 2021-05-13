@@ -7,6 +7,7 @@ metadata:
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     heritage: {{ .Release.Service }}
     release: {{ .Release.Name }}
+  namespace: {{ .Release.Namespace | quote }}
 {{- if .Values.fn_api.service.annotations }}
   annotations:
 {{ toYaml .Values.fn_api.service.annotations | indent 4 }}
@@ -16,10 +17,10 @@ spec:
   ports:
   - name: api
     port: {{ .Values.fn_api.service.port }}
-    targetPort: {{ .Values.fn_api.container_port }}
+    targetPort: {{ .Values.fn_api.service.port }}
   - name: runner-lb
-    port: {{ .Values.fn_lb_runner.service.port }}
-    targetPort: {{ .Values.fn_lb_runner.container_port }}
+    port: {{ .Values.fn_lb.service.port }}
+    targetPort: {{ .Values.fn_lb.service.port }}
   selector:
     app: {{ template "fullname" . }}
     role: fn-service

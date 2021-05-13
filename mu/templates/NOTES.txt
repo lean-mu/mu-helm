@@ -1,0 +1,68 @@
+
+= CONGRATULATIONS ======
+
+The Mu platform can be accessed at the following ingress url:
+ - {{ template "mu.public.ui.url" . }}
+
+From within the cluster, the cluster lives at:
+ - {{ template "mu.private_api_url" . }}
+
+The above assumes the hostname {{ .Values.ingress.ui.hostname }} points to the ingres IP.
+If you need to discover your ingres IP, run the following command:
+ - kubectl get ingress mu-ingress-controller -o jsonpath="{.status.loadBalancer.ingress[0].ip}"
+
+When properly configured, the following URLs are available
+
+{{- if .Values.ingress.ui.hostname }}
+           UI endpoint - {{ template "mu.public.ui.url" . }}
+{{- end }}
+          API endpoint - {{ template "mu.public.api.url" . }}
+FN invocation endpoint - {{ template "mu.public.fn.url" . }}
+{{- if .Values.ingress.flow.hostname }}
+         FLOW endpoint - {{ template "mu.public.flow.url" . }}
+{{- end }}
+{{- if .Values.ingress.grafana.hostname }}
+   monitoring endpoint - {{ template "mu.public.grafana.url" . }}
+{{- end }}
+
+= TESTING THE CONFIGURATION ======
+
+First, we will install Fn
+
+ $ brew install fn
+
+First, We will setup a context to access the new mu instance:
+
+    optional - assuming the mu context already exists
+[ $ fn use ctx default
+      fn delete ctx mu ]
+ $ fn create ctx {{ template "release" . }} --api-url {{ template "mu.public.api.url" . }} --provider default --registry <your-docker-registry>
+ $ fn use ctx {{ template "release" . }}
+
+Run a quick test to check platform connectivity
+
+ $ fn version
+Client version is latest version: 0.6.7
+Server version:  0.3.749
+
+Next, test the connectivity by issuing the following commands:
+
+ $ fn list apps
+ $ fn create app first-app
+
+Last, create and call a function. Please ensure you have a local docker deamon running, it is used to build the fn image before it gets deployed:
+
+ $ fn init --runtime go --trigger http first-fn
+ $ cd first-fn
+ $ fn --verbose deploy --app first-app
+ $ fn inspect fn first-app first-fn
+ $ fn invoke fn first-app first-fn
+
+{{- if not  .Values.mysql.persistence.enabled }}
+
+############################################################################
+###   WARNING: Persistence is disabled!!! You will lose function and     ###
+###   flow state when the MySQL pod is terminated.                       ###
+###   See the README.md for instructions on configuring persistence.     ###
+############################################################################
+{{- end }}
