@@ -6,13 +6,6 @@ Mu is a serverless faas platform based on the [Fn project](http://fnproject.io)
 
 This chart deploys a fully functioning instance of  [Mu](https://github.com/lean-mu/mu) on a Kubernetes cluster using the [Helm 3](https://helm.sh/) package manager.
 
-## Prerequisites
-
-- a Kubernetes cluster.
-- [Helm 3](https://github.com/kubernetes/helm#install)
-- [Ingress controller](https://github.com/helm/charts/tree/master/stable/nginx-ingress)
-- [Cert manager](https://medium.com/oracledevs/secure-your-kubernetes-services-using-cert-manager-nginx-ingress-and-lets-encrypt-888c8b996260)
-
 ## Installation
 
 ### Development Environement
@@ -24,18 +17,17 @@ To setup a local development environment, start minikube as follows:
 $ minikube start --vm-driver=hyperkit --memory=6144 --cpus=4 --disk-size=50g
 $ minikube addons enable ingress
 
-# that's to leverage minikube's internal dockerd to build functions
+# building functions locally requires docker. Let's leverage minikube's internal dockerd
 $ eval $(minikube docker-env)
 
-# proceed to the next section
 ```
 
 ### Preparing chart values
 
-Please take the time to review the settings in `mu/values.yaml`
+Please take the time to review the default settings in `mu/values.yaml`
 
 ### Configuring Database Persistence 
- 
+
 Mu persists function's metadata in MySQL. This is configured using the MySQL Helm Chart.
 
 By default this uses container storage. If required, you may configure a persistent volume by setting the `mysql.*` values in the chart values to that which corresponds to your storage requirements.
@@ -58,22 +50,22 @@ I strongly recommend to use [k9s](https://k9scli.io/) to check on status. It's m
 Assuming all went well, you should now have a live instance of mu deployed on the cluster.
 Accessing the instance requires to define its ingress in the DNS.
 
-Get the ingres ip using the command below, and make it match the ingres' **HOSTNAME** defined in `values.yaml`
+Get the ingres ip using the command below, and make it match the ingres' **fn.mu.internal** defined in `values.yaml`
 
 ```shell
  $ kubectl get ingress mu-ingress-controller -o jsonpath="{.status.loadBalancer.ingress[0].ip}"
 ```
 
-You are done!  Using a browser, open a browser to `http//HOSTNAME` and the Mu user interface should show.
+You are done!  Using a browser, open a browser to `http//fn.mu.internal` and the Mu user interface should show.
 
 When properly configured, the following URLs are available
 
 ```text
-           UI endpoint - http://HOSTNAME/
-          API endpoint - http://HOSTNAME/api
-FN invocation endpoint - http://HOSTNAME/fn
-         FLOW endpoint - http://HOSTNAME/flow
-   monitoring endpoint - http://HOSTNAME/grafana
+           UI endpoint - http://fn.mu.internal/
+          API endpoint - http://fn.mu.internal/api
+FN invocation endpoint - http://fn.mu.internal/fn
+         FLOW endpoint - http://fn.mu.internal/flow
+   monitoring endpoint - http://fn.mu.internal/grafana
 ```
 
 > Note:  Those endpoints can be fully configured by adjusting the chart, for instance you could setup virtual hosts rather than context paths
@@ -85,7 +77,7 @@ At this point, and since `mu` is built on `project fn`, it is a good idea to ins
 ```bash
 $ brew install fn
 # Then set you context to your instance
-$ fn create context mu --api-url http://HOSTNAME/api
+$ fn create context mu --api-url http://fn.mu.internal/api
 Successfully created context: mu
 # set the default context
 $ fn use ctx mu
@@ -96,12 +88,12 @@ Client version is latest version: 0.6.7
 Server version:  0.3.749
 ```
 
-Further reading about how to deploy functions can be found in the Getting Started guides.
+Further reading about functions development can be found in the Getting Started guides.
 
-## Passwords
+## Default Passwords
 
-- grafana: admin/admin
 - Fn: 1234567890
+- grafana: admin/admin
 
 ## Uninstalling the Chart
 
