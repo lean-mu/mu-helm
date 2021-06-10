@@ -70,7 +70,7 @@ FN invocation endpoint - http://fn.mu.internal/fn
 
 > Note:  Those endpoints can be fully configured by adjusting the chart, for instance you could setup virtual hosts rather than context paths
 
-## Configuring the context
+## Configuring the Fn context
 
 At this point, and since `mu` is built on `project fn`, it is a good idea to install the fn client.
 
@@ -88,7 +88,7 @@ Client version is latest version: 0.6.7
 Server version:  0.3.749
 ```
 
-Further reading about functions development can be found in the Getting Started guides.
+Further reading about functions development can be found in the Getting Started guides or the chart notes.
 
 ## Default Passwords
 

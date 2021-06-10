@@ -28,7 +28,7 @@ Create a default fully qualified mysql name.
 # call me as {{ template "nginx.path.groupping" (merge (dict "path" "myvalue") .) }}
 {{- define "nginx.path.groupping" -}}
 {{- if eq .path "/" }}
-{{- printf "(/|$)(.*)" }}
+{{- printf "/(.*)" }}
 {{- else }}
 {{- printf "%s(/|$)(.*)" .path }}
 {{- end }}
