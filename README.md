@@ -61,9 +61,9 @@ You are done!  Using a browser, open a browser to `http//fn.mu.internal` and the
 When properly configured, the following URLs are available
 
 ```text
-           UI endpoint - http://fn.mu.internal/
+           UI endpoint - http://fn.mu.internal/ui
           API endpoint - http://fn.mu.internal/api
-FN invocation endpoint - http://fn.mu.internal/fn
+FN invocation endpoint - http://fn.mu.internal/
          FLOW endpoint - http://fn.mu.internal/flow
    monitoring endpoint - http://fn.mu.internal/grafana
 ```

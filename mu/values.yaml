@@ -13,10 +13,10 @@ ingress:
   # if using the same hostname, please ensure contexts differ
   ui:
     hostname: fn.mu.internal
-    context: /
+    context: /ui
   fn:
     hostname: fn.mu.internal
-    context: /fn
+    context: /
   flow:
     hostname: fn.mu.internal
     context: /flow
