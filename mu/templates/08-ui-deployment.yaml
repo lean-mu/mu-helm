@@ -34,10 +34,8 @@ spec:
           env:
             - name: FN_API_URL
               value: {{ template "mu.private_api_url". }}
-            - name: LEVEL
+            - name: FN_LOG_LEVEL
               value: {{ .Values.logLevel }}
             - name: PORT
               value: {{ .Values.fn_ui.service.port | quote }}
-            - name: NODE_CONFIG
-              value: '{"logLevel":"$(LEVEL)"}'
 {{- end}}
