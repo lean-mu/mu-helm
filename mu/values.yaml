@@ -12,19 +12,19 @@ ingress:
   enabled: true
   # if using the same hostname, please ensure contexts differ
   ui:
-    hostname: fn.mu.internal
+    hostname: fn.mu.local
     context: /ui
   fn:
-    hostname: fn.mu.internal
+    hostname: fn.mu.local
     context: /
   flow:
-    hostname: fn.mu.internal
+    hostname: fn.mu.local
     context: /flow
   api:
-    hostname: fn.mu.internal
+    hostname: fn.mu.local
     context: /api
   grafana:
-    hostname: fn.mu.internal
+    hostname: fn.mu.local
     context: /grafana
   annotations:
     kubernetes.io/ingress.class: nginx

@@ -50,22 +50,22 @@ I strongly recommend to use [k9s](https://k9scli.io/) to check on status. It's m
 Assuming all went well, you should now have a live instance of mu deployed on the cluster.
 Accessing the instance requires to define its ingress in the DNS.
 
-Get the ingres ip using the command below, and make it match the ingres' **fn.mu.internal** defined in `values.yaml`
+Get the ingres ip using the command below, and make it match the ingres' **fn.mu.local** defined in `values.yaml`
 
 ```shell
  $ kubectl get ingress mu-ingress-controller -o jsonpath="{.status.loadBalancer.ingress[0].ip}"
 ```
 
-You are done!  Using a browser, open a browser to `http//fn.mu.internal` and the Mu user interface should show.
+You are done!  Using a browser, open a browser to `http//fn.mu.local` and the Mu user interface should show.
 
 When properly configured, the following URLs are available
 
 ```text
-           UI endpoint - http://fn.mu.internal/ui
-          API endpoint - http://fn.mu.internal/api
-FN invocation endpoint - http://fn.mu.internal/
-         FLOW endpoint - http://fn.mu.internal/flow
-   monitoring endpoint - http://fn.mu.internal/grafana
+           UI endpoint - http://fn.mu.local/ui
+          API endpoint - http://fn.mu.local/api
+FN invocation endpoint - http://fn.mu.local/
+         FLOW endpoint - http://fn.mu.local/flow
+   monitoring endpoint - http://fn.mu.local/grafana
 ```
 
 > Note:  Those endpoints can be fully configured by adjusting the chart, for instance you could setup virtual hosts rather than context paths
@@ -77,7 +77,7 @@ At this point, and since `mu` is built on `project fn`, it is a good idea to ins
 ```bash
 $ brew install fn
 # Then set you context to your instance
-$ fn create context mu --api-url http://fn.mu.internal/api
+$ fn create context mu --api-url http://fn.mu.local/api
 Successfully created context: mu
 # set the default context
 $ fn use ctx mu
