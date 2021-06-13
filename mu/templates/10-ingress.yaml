@@ -26,6 +26,7 @@ spec:
       paths:
       - pathType: Prefix
         path: {{ template "nginx.path.groupping" (merge (dict "path" .Values.ingress.api.context) .) }}
+        # path: {{ .Values.ingress.api.context }}
         backend:
           service:
             name: {{ template "fullname" . }}
@@ -38,6 +39,7 @@ spec:
       paths:
       - pathType: Prefix
         path: {{ template "nginx.path.groupping" (merge (dict "path" .Values.ingress.ui.context) .) }}
+        # path: {{ .Values.ingress.ui.context }}
         backend:
           service:
             name: {{ template "fullname" . }}-ui
@@ -50,6 +52,7 @@ spec:
       paths:
       - pathType: Prefix
         path: {{ template "nginx.path.groupping" (merge (dict "path" .Values.ingress.fn.context) .) }}
+        # path: {{ .Values.ingress.fn.context }}
         backend:
           service:
             name: {{ template "fullname" . }}
@@ -61,6 +64,7 @@ spec:
       paths:
       - pathType: Prefix
         path: {{ template "nginx.path.groupping" (merge (dict "path" .Values.ingress.flow.context) .) }}
+        # path: {{ .Values.ingress.flow.context }}
         backend:
           service:
             name: {{ template "fullname" . }}-flow
@@ -73,6 +77,7 @@ spec:
       paths:
       - pathType: Prefix
         path: {{ template "nginx.path.groupping" (merge (dict "path" .Values.ingress.grafana.context) .) }}
+        # path: {{ .Values.ingress.grafana.context }}
         backend:
           service:
             name: {{ template "fullname" . }}-grafana
