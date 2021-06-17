@@ -10,7 +10,7 @@ metadata:
     release: {{ .Release.Name }}
   namespace: {{ .Release.Namespace | quote }}
   annotations:
-      nginx.ingress.kubernetes.io/rewrite-target:  /$2
+      nginx.ingress.kubernetes.io/rewrite-target:  /$1
 {{- if .Values.tls.enabled }} 
       certmanager.k8s.io/cluster-issuer: letsencrypt-staging
       kubernetes.io/tls-acme: “true”
