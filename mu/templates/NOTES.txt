@@ -47,8 +47,8 @@ Server version:  0.3.749
 
 Next, test the connectivity by issuing the following commands:
 
- $ fn list apps
  $ fn create app first-app
+ $ fn list apps
 
 Last, create and call a function. Please ensure you have a local docker deamon running, it is used to build the fn image before it gets deployed:
 

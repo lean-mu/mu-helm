@@ -43,11 +43,11 @@ $ helm install --create-namespace -n mu mu .
 ```
 
 Deployment is performed as a background task.
-I strongly recommend to use [k9s](https://k9scli.io/) to check on status. It's much simplier than the cli and you can quickly browser though deployments, pods, services and ingress to ensure all is fine and dandy.
+We strongly recommend to use [k9s](https://k9scli.io/) to check on status. It is much simplier than the cli and allows to quickly browser though deployments, events and logs.
 
 ## Accessing the cluster
 
-Assuming all went well, you should now have a live instance of mu deployed on the cluster.
+You should now have a live instance of mu deployed on the cluster.
 Accessing the instance requires to define its ingress in the DNS.
 
 Get the ingres ip using the command below, and make it match the ingres' **fn.mu.local** defined in `values.yaml`
@@ -77,7 +77,7 @@ At this point, and since `mu` is built on `project fn`, it is a good idea to ins
 ```bash
 $ brew install fn
 # Then set you context to your instance
-$ fn create context mu --api-url http://fn.mu.local/api
+$ fn create context mu --api-url http://fn.mu.local/api --registry <YOURREGISTRY>
 Successfully created context: mu
 # set the default context
 $ fn use ctx mu
