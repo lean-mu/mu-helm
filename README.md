@@ -38,7 +38,7 @@ By default this uses container storage. If required, you may configure a persist
 $ git clone https://github.com/lean-mu/mu-helm.git
 $ cd mu-helm/mu
 # Install chart dependencies
-$ helm dep build .
+$ helm dep update .
 $ helm install --create-namespace -n mu mu .
 ```
 
