@@ -50,7 +50,7 @@ spec:
       paths:
       - pathType: Prefix
         path: {{ template "nginx.path.groupping" (merge (dict "path" .Values.ingress.fn.context) .) }}
-        # path: {{ .Values.ingress.fn.context }}
+        #path: {{ .Values.ingress.fn.context }}
         backend:
           service:
             name: {{ template "fullname" . }}
@@ -62,7 +62,7 @@ spec:
       paths:
       - pathType: Prefix
         path: {{ template "nginx.path.groupping" (merge (dict "path" .Values.ingress.flow.context) .) }}
-        # path: {{ .Values.ingress.flow.context }}
+        #path: {{ .Values.ingress.flow.context }}
         backend:
           service:
             name: {{ template "fullname" . }}-flow
@@ -74,8 +74,8 @@ spec:
     http:
       paths:
       - pathType: Prefix
-        path: {{ template "nginx.path.groupping" (merge (dict "path" .Values.ingress.grafana.context) .) }}
-        # path: {{ .Values.ingress.grafana.context }}
+        #path: {{ template "nginx.path.groupping" (merge (dict "path" .Values.ingress.grafana.context) .) }}
+        path: {{ .Values.ingress.grafana.context }}
         backend:
           service:
             name: {{ template "fullname" . }}-grafana
