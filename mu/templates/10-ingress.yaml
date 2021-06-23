@@ -37,8 +37,7 @@ spec:
     http:
       paths:
       - pathType: Prefix
-        path: {{ template "nginx.path.groupping" (merge (dict "path" .Values.ingress.ui.context) .) }}
-        # path: {{ .Values.ingress.ui.context }}
+        path: {{ .Values.ingress.ui.context }}
         backend:
           service:
             name: {{ template "fullname" . }}-ui
