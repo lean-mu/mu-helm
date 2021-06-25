@@ -10,6 +10,11 @@ metadata:
     release: {{ .Release.Name }}
   namespace: {{ .Release.Namespace | quote }}
   annotations:
+      nginx.ingress.kubernetes.io/server-snippet: |
+        location ~ ".*/metrics" {
+          deny all;
+          return 403;
+        }
       nginx.ingress.kubernetes.io/rewrite-target:  /$2
 {{- if .Values.tls.enabled }} 
       certmanager.k8s.io/cluster-issuer: letsencrypt-staging
@@ -79,10 +84,10 @@ spec:
             port: 
               number: {{ .Values.fn_lb.service.port }}
 {{- end }}
-  {{- if eq .Values.tls.enabled true }}
+{{- if eq .Values.tls.enabled true }}
   tls:
     - secretName: {{ .Values.tls.secret_reference }}
       hosts:
         - {{ .Values.ingress.hostname }}
-  {{- end -}}
+{{- end -}}
 {{- end -}}
