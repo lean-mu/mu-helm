@@ -1,4 +1,3 @@
-fn/charts
-*.tgz
+mu/charts
 .idea
 *.iml
