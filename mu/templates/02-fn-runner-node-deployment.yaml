@@ -42,7 +42,7 @@ spec:
           - containerPort: {{ .Values.fn_runner.service.grpc_port }}
           env:
           - name: FN_LOG_LEVEL
-            value: {{ .Values.logLevel | quote }}
+            value: {{ .Values.logLevel.fn | quote }}
           - name: FN_NODE_TYPE
             value: "pure-runner"
           - name: FN_GRPC_PORT

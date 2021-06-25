@@ -3,8 +3,13 @@ imagePullPolicy: Always
 # If non-null, will override the cluster name
 nameOverride: ""
 rbac: true
-# logLevel: info
-logLevel: debug
+
+logLevel:
+  api: debug
+  fn: debug
+  ui: info
+  flow: info
+  grafana: info
 
 ## Ingress configuration.
 ## ref: https://kubernetes.io/docs/user-guide/ingress/
@@ -123,7 +128,6 @@ fn_flow:
   enabled: false
   image: fnproject/flow
   tag: 0.1.87
-  logLevel: info
   service:
     port: 80
     type: ClusterIP

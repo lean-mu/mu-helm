@@ -51,7 +51,7 @@ spec:
             periodSeconds: 3
           env:
           - name: FN_LOG_LEVEL
-            value: {{ .Values.logLevel | quote }}
+            value: {{ .Values.logLevel.api | quote }}
           - name: FN_PORT
             value: {{ .Values.fn_api.service.port | quote }}
           - name: FN_PUBLIC_LB_URL
@@ -75,7 +75,7 @@ spec:
           - containerPort: {{ .Values.fn_lb.service.port }}
           env:
           - name: FN_LOG_LEVEL
-            value: {{ .Values.logLevel | quote }}
+            value: {{ .Values.logLevel.fn | quote }}
           - name: FN_GRPC_PORT
             value: {{ .Values.fn_runner.service.grpc_port | quote }}
           - name: FN_PORT
