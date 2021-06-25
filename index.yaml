@@ -3,7 +3,7 @@ entries:
   mu:
   - apiVersion: v2
     appVersion: 0.0.161
-    created: "2021-06-25T17:15:54.11683+04:00"
+    created: "2021-06-25T17:25:39.986916+04:00"
     dependencies:
     - name: mysql
       repository: https://charts.helm.sh/stable
@@ -21,7 +21,7 @@ entries:
       repository: https://packages.timber.io/helm/latest
       version: 0.13.1
     description: The lean serverless platform
-    digest: 7c534b72441b857deede71d7b46b1d7a45a2a2d1dedde4524e3b49ef75fdb43f
+    digest: d0dde89b4b9f135ec9b508ad562bffed74577bdbf2ff25170eab1de5d7c0ddd9
     home: http://fnproject.io/
     icon: http://fnproject.io/images/fn-300x125.png
     keywords:
@@ -43,4 +43,4 @@ entries:
     urls:
     - mu-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-25T17:15:54.107725+04:00"
+generated: "2021-06-25T17:25:39.977323+04:00"
