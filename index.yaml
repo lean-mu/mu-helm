@@ -1,0 +1,46 @@
+apiVersion: v1
+entries:
+  mu:
+  - apiVersion: v2
+    appVersion: 0.0.161
+    created: "2021-06-25T17:15:54.11683+04:00"
+    dependencies:
+    - name: mysql
+      repository: https://charts.helm.sh/stable
+      version: 1.6.9
+    - name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.9.2
+    - name: loki
+      repository: https://grafana.github.io/helm-charts
+      version: 2.5.0
+    - name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 14.1.1
+    - name: vector-agent
+      repository: https://packages.timber.io/helm/latest
+      version: 0.13.1
+    description: The lean serverless platform
+    digest: 7c534b72441b857deede71d7b46b1d7a45a2a2d1dedde4524e3b49ef75fdb43f
+    home: http://fnproject.io/
+    icon: http://fnproject.io/images/fn-300x125.png
+    keywords:
+    - mu
+    - faas
+    - fn
+    - containers
+    - functions
+    - serverless
+    maintainers:
+    - email: orefalo@snapcore.com
+      name: Olivier Refalo
+    name: mu
+    sources:
+    - https://github.com/lean-mu/mu-helm
+    - https://github.com/lean-mu/mu
+    - https://github.com/lean-mu/ui
+    - https://github.com/lean-mu/flow
+    urls:
+    - mu-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-06-25T17:15:54.107725+04:00"

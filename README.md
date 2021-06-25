@@ -46,11 +46,9 @@ By default this uses container storage. If required, you may configure a persist
 ## Deploying the Chart
 
 ```shell
-$ git clone https://github.com/lean-mu/mu-helm.git
-$ cd mu-helm/mu
-# Install chart dependencies
-$ helm dep update .
-$ helm install --create-namespace -n mu mu .
+$ helm repo add leanmu 'https://raw.githubusercontent.com/lean-mu/mu-helm/master/'
+$ helm repo update
+$ helm install --create-namespace -n mu mu leanmu/mu
 ```
 
 Deployment is performed as a background task.

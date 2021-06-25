@@ -1,9 +1,10 @@
-name: fn
+name: mu
 apiVersion: v2
 version: 0.1.0
 appVersion: 0.0.161
 description: The lean serverless platform
 keywords:
+- mu
 - faas
 - fn
 - containers
