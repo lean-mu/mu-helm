@@ -10,6 +10,7 @@ metadata:
     release: {{ .Release.Name }}
   namespace: {{ .Release.Namespace | quote }}
   annotations:
+      nginx.ingress.kubernetes.io/rewrite-target:  /$2
 {{- if .Values.tls.enabled }} 
       certmanager.k8s.io/cluster-issuer: letsencrypt-staging
       kubernetes.io/tls-acme: “true”
@@ -24,8 +25,9 @@ spec:
     http:
       paths:
       - pathType: Prefix
-        path: {{ template "nginx.path.groupping" (merge (dict "path" .Values.ingress.api.context) .) }}
-        # path: {{ .Values.ingress.api.context }}
+        path: /api(/|$)(.*)
+        #path: {{ template "nginx.path.groupping" (merge (dict "path" .Values.ingress.api.context) .) }}
+        #path: {{ .Values.ingress.api.context }}
         backend:
           service:
             name: {{ template "fullname" . }}
@@ -37,25 +39,13 @@ spec:
     http:
       paths:
       - pathType: Prefix
-        path: {{ .Values.ingress.ui.context }}
+        path: /ui(/|$)(.*)
+        #path: {{ .Values.ingress.ui.context }}
         backend:
           service:
             name: {{ template "fullname" . }}-ui
             port: 
               number: {{ .Values.fn_ui.service.port }}
-{{- end }}
-{{- if .Values.ingress.fn.hostname }}
-  - host: {{ .Values.ingress.fn.hostname }}
-    http:
-      paths:
-      - pathType: Prefix
-        path: {{ template "nginx.path.groupping" (merge (dict "path" .Values.ingress.fn.context) .) }}
-        #path: {{ .Values.ingress.fn.context }}
-        backend:
-          service:
-            name: {{ template "fullname" . }}
-            port: 
-              number: {{ .Values.fn_lb.service.port }}
 {{- end }}
 {{- if and .Values.fn_flow.enabled .Values.ingress.flow.hostname }}
   - http:
@@ -75,12 +65,27 @@ spec:
       paths:
       - pathType: Prefix
         #path: {{ template "nginx.path.groupping" (merge (dict "path" .Values.ingress.grafana.context) .) }}
-        path: {{ .Values.ingress.grafana.context }}
+        #path: {{ .Values.ingress.grafana.context }}
+        path: /grafana(/|$)(.*)
         backend:
           service:
             name: {{ template "fullname" . }}-grafana
             port: 
               number: 80
+{{- end }}
+{{- if .Values.ingress.fn.hostname }}
+  - host: {{ .Values.ingress.fn.hostname }}
+    http:
+      paths:
+      - pathType: Prefix
+        path: /($)(.*)
+        #path: {{ template "nginx.path.groupping" (merge (dict "path" .Values.ingress.fn.context) .) }}
+        #path: {{ .Values.ingress.fn.context }}
+        backend:
+          service:
+            name: {{ template "fullname" . }}
+            port: 
+              number: {{ .Values.fn_lb.service.port }}
 {{- end }}
   {{- if eq .Values.tls.enabled true }}
   tls:
