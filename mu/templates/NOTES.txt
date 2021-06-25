@@ -55,7 +55,7 @@ Last, create and call a function. Please ensure you have a local docker deamon r
  $ fn init --runtime go --trigger http first-fn
  $ cd first-fn
  $ fn --verbose deploy --app first-app
- $ fn invoke first-app first-fn
+ $ echo -n '{"name":"John"}' | fn invoke first-app first-fn
 
 Invoking with CURL
 
