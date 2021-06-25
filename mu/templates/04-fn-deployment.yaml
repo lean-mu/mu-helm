@@ -52,6 +52,10 @@ spec:
           env:
           - name: FN_LOG_LEVEL
             value: {{ .Values.logLevel.api | quote }}
+        {{- if eq .Values.logLevel.api "debug" }}
+          - name: GIN_MODE
+            value: "debug"
+        {{- end }}
           - name: FN_PORT
             value: {{ .Values.fn_api.service.port | quote }}
           - name: FN_PUBLIC_LB_URL
@@ -76,6 +80,10 @@ spec:
           env:
           - name: FN_LOG_LEVEL
             value: {{ .Values.logLevel.fn | quote }}
+        {{- if eq .Values.logLevel.fn "debug" }}
+          - name: GIN_MODE
+            value: "debug"
+        {{- end }}
           - name: FN_GRPC_PORT
             value: {{ .Values.fn_runner.service.grpc_port | quote }}
           - name: FN_PORT

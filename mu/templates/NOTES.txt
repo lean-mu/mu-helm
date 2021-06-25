@@ -61,7 +61,7 @@ Invoking with CURL
 
  $ fn inspect fn first-app first-fn
 
-Grab the invocation endpoint from the output
+Grab the INVOCATION_URL endpoint from the output
 
 $ curl -X "POST" -H "Content-Type: application/json" -d '{"name":"Bob"}' INVOCATION_URL
 

@@ -24,12 +24,12 @@ spec:
     spec:
       {{- if .Values.fn_runner.nodeSelector }}
       nodeSelector:
-{{ toYaml .Values.fn_runner.nodeSelector | indent 8 }}
-{{- end }}
+      {{ toYaml .Values.fn_runner.nodeSelector | indent 8 }}
+      {{- end }}
       {{- if .Values.fn_runner.tolerations }}
       tolerations:
-{{ toYaml .Values.fn_runner.tolerations | indent 8 }}
-{{- end }}
+      {{ toYaml .Values.fn_runner.tolerations | indent 8 }}
+      {{- end }}
       containers:
         - name: runner
           image: {{ .Values.fn_runner.image }}:{{ .Values.fn_runner.tag }}
@@ -45,6 +45,10 @@ spec:
             value: {{ .Values.logLevel.fn | quote }}
           - name: FN_NODE_TYPE
             value: "pure-runner"
+        {{- if eq .Values.logLevel.fn "debug" }}
+          - name: GIN_MODE
+            value: "debug"
+        {{- end }}
           - name: FN_GRPC_PORT
             value: {{ .Values.fn_runner.service.grpc_port | quote }}
         {{- if .Values.fn_docker_auth.enabled }}

@@ -6,9 +6,20 @@ Mu is a serverless faas platform based on the [Fn project](http://fnproject.io)
 
 This chart deploys a fully functioning instance of  [Mu](https://github.com/lean-mu/mu) on a Kubernetes cluster using the [Helm 3](https://helm.sh/) package manager.
 
+
+
+## Prerequisites
+
+Before installing Mu you'll need:
+1. A computer running Linux or MacOS.
+2. A k8s cluster preferably with persistent volume provisioning support.
+3. Helm 3 package manager, installed locally.
+
+
+
 ## Installation
 
-### Development Environement
+#### If you need a local cluster
 
 To setup a local development environment, start minikube as follows:
 
