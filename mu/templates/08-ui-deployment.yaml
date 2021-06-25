@@ -35,7 +35,8 @@ spec:
             - name: FN_API_URL
               value: {{ template "mu.private_api_url" . }}
             - name: FN_LOG_LEVEL
-              value: {{ .Values.logLevel }}
+#              value: {{ .Values.logLevel }}
+              value: info
             - name: BASE_URL
               value: /
             - name: PORT
