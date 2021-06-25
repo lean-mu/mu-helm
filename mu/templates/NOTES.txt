@@ -55,8 +55,15 @@ Last, create and call a function. Please ensure you have a local docker deamon r
  $ fn init --runtime go --trigger http first-fn
  $ cd first-fn
  $ fn --verbose deploy --app first-app
+ $ fn invoke first-app first-fn
+
+Invoking with CURL
+
  $ fn inspect fn first-app first-fn
- $ fn invoke fn first-app first-fn
+
+Grab the invocation endpoint from the output
+
+$ curl -X "POST" -H "Content-Type: application/json" -d '{"name":"Bob"}' INVOCATION_URL
 
 {{- if not  .Values.mysql.persistence.enabled }}
 

@@ -49,7 +49,7 @@ fn_docker_auth:
 # Fn runner deployment definition
 # Nodes in this deployment responsible for the functions execution
 fn_runner:
-  replicas: 3 # number of replicas of Fn runner to deploy, recommended: 3 or greater
+  replicas: 1 # number of replicas of Fn runner to deploy, recommended: 3 or greater
   image: leanmu/runnernode # Fn server image
   tag: latest # Fn server image tag
   resources: # K8s computation resources
