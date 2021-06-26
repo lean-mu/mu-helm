@@ -15,6 +15,10 @@ metadata:
           deny all;
           return 403;
         }
+        location ~ ".*/health" {
+          deny all;
+          return 403;
+        }
       nginx.ingress.kubernetes.io/rewrite-target:  /$2
 {{- if .Values.tls.enabled }} 
       certmanager.k8s.io/cluster-issuer: letsencrypt-staging
