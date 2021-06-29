@@ -6,16 +6,22 @@ Mu is a serverless faas platform based on the [Fn project](http://fnproject.io)
 
 This chart deploys a fully functioning instance of  [Mu](https://github.com/lean-mu/mu) on a Kubernetes cluster using the [Helm 3](https://helm.sh/) package manager.
 
+## Why helmsman ?
 
+[Helmsman](https://github.com/Praqma/helmsman) is a superset of helm with the following benefits
+
+- Multi namespace deployment
+- Resume from failure - just run it again
+- Deployment ordering - pick the order
+- Parametrizable values.yaml
+- Ease - this one should be first
 
 ## Prerequisites
 
 Before installing Mu you'll need:
 1. A computer running Linux or MacOS.
 2. A k8s cluster preferably with persistent volume provisioning support.
-3. Helm 3 package manager, installed locally.
-
-
+3. [Helmsman](https://github.com/Praqma/helmsman) and indirectly the Helm 3 package manager, installed locally.
 
 ## Installation
 

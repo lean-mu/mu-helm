@@ -213,6 +213,25 @@ grafana:
   adminPassword: admin
   plugins:
     - grafana-piechart-panel
+  datasources:
+    datasources.yaml:
+      apiVersion: 1
+      datasources:
+        - name: Prometheus
+          type: prometheus
+          url: http://mu-prometheus-server.mu.svc.cluster.local:80
+          access: proxy
+          org_id: 1
+          editable: false
+          isDefault: true
+          version: 1
+        - name: Loki
+          type: loki
+          url: http://mu-loki.mu.svc.cluster.local:3100
+          access: proxy
+          org_id: 1
+          editable: false
+          version: 1
   persistence:
     enabled: false
 
