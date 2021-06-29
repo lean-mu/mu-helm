@@ -1,15 +1,25 @@
+   
+ Congratulations!
 
-= CONGRATULATIONS ======
+______                          _____  __
+___  / ___________ _______      __  / / /
+__  /  _  _ \  __ `/_  __ \     _  / / / 
+_  /___/  __/ /_/ /_  / / /     / /_/ /  
+/_____/\___/\__,_/ /_/ /_/     / ____/   
+                              /_/
+                                                                 
+        Lean Mu is now provisioned...
 
-The Mu platform can be accessed at the following ingress url:
- - {{ template "mu.public.ui.url" . }}
+Please give the cluster a few minutes to initialize...
 
-From within the cluster, the mu api url is located at:
- - {{ template "mu.private_api_url" . }}
+To verify deployment status, run:
+ $ kubectl -n {{ .Release.Namespace }} get deployments -l "release={{ .Release.Name }}, app={{ template "app.name" . }}"
+
+The Mu platform can be accessed at the following ingress url {{ template "mu.public.ui.url" . }}
 
 The above assumes the hostname {{ .Values.ingress.ui.hostname }} points to the ingres IP.
-If you need to discover your ingres IP, run the following command:
- - kubectl get ingress mu-ingress-controller -o jsonpath="{.status.loadBalancer.ingress[0].ip}"
+If you need to discover the ingres IP to update the DNS, run the following command:
+ - kubectl get ingress mu-ingress-controller -n {{ .Release.Namespace }} -o jsonpath="{.status.loadBalancer.ingress[0].ip}"
 
 When properly configured, the following URLs are available
 
@@ -24,14 +34,15 @@ Fn invocation endpoint - {{ template "mu.public.fn.url" . }}
 {{- if .Values.ingress.grafana.hostname }}
    Monitoring endpoint - {{ template "mu.public.grafana.url" . }}
 {{- end }}
+    Incluster endpoint - {{ template "mu.private_api_url" . }}
 
 = TESTING THE CONFIGURATION ======
 
-First, we will install Fn
+First, we will install Fn CLI
 
  $ brew install fn
 
-First, We will setup a context to access the new mu instance:
+Next, we will setup a context to access the new mu instance:
 
     optional - assuming the mu context already exists
 [ $ fn use ctx default
@@ -40,12 +51,13 @@ First, We will setup a context to access the new mu instance:
  $ fn use ctx {{ template "release" . }}
 
 Run a quick test to check platform connectivity
+   Ensure the Server version is properly displaying a number
 
  $ fn version
 Client version is latest version: 0.6.7
 Server version:  0.3.749
 
-Next, test the connectivity by issuing the following commands:
+We will now create a simple application by issuing the following commands:
 
  $ fn create app first-app
  $ fn list apps
@@ -64,6 +76,18 @@ Invoking with CURL
 Grab the INVOCATION_URL endpoint from the output
 
 $ curl -X "POST" -H "Content-Type: application/json" -d '{"name":"Bob"}' INVOCATION_URL
+
+
+= TROUBLESHOOTING ======
+
+See all pods
+ $ kubectl -n {{ .Release.Namespace }} get pods
+
+Gets details about the deployment of the pod
+ $ kubectl -n {{ .Release.Namespace }} get pod <POD_NAME>
+
+Gets logs from your application
+ $ kubectl -n {{ .Release.Namespace }} logs <POD_NAME>
 
 {{- if not  .Values.mysql.persistence.enabled }}
 

@@ -21,6 +21,10 @@ spec:
          heritage: {{ .Release.Service }}
          release: {{ .Release.Name }}
          role: fn-service
+       annotations:
+         prometheus.io/scrape: 'true'
+         prometheus.io/port: {{ .Values.fn_lb.service.port | quote }}
+         prometheus.io/path: '/metrics'
     spec:
       {{- if .Values.rbac }}
       serviceAccountName: {{ .Release.Name }}-service-account
@@ -68,6 +72,7 @@ spec:
             value: {{ $value | quote }}
             {{- end }}
           {{- end }}
+          # === LB CONFIGURATION
         - name: runner-lb
           image: {{ .Values.fn_lb.image }}:{{ .Values.fn_lb.tag }}
           imagePullPolicy: {{ .Values.imagePullPolicy }}

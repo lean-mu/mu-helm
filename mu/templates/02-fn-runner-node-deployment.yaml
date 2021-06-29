@@ -21,6 +21,10 @@ spec:
          heritage: {{ .Release.Service }}
          release: {{ .Release.Name }}
          role: runner
+       annotations:
+         prometheus.io/scrape: 'true'
+         prometheus.io/port: {{ .Values.fn_lb.service.port | quote }}
+         prometheus.io/path: '/metrics'
     spec:
       {{- if .Values.fn_runner.nodeSelector }}
       nodeSelector:
