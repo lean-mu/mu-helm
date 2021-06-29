@@ -255,8 +255,6 @@ prometheus:
     persistentVolume:
       enabled: false
     replicaCount: 1
-    extraArgs:
-      storage.local.retention: 1h
   # serverFiles:
   #   alerts: ""
   #   prometheus.yml: ""

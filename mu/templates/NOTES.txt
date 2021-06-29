@@ -13,7 +13,7 @@ _  /___/  __/ /_/ /_  / / /     / /_/ /
 Please give the cluster a few minutes to initialize...
 
 To verify deployment status, run:
- $ kubectl -n {{ .Release.Namespace }} get deployments -l "release={{ .Release.Name }}, app={{ template "app.name" . }}"
+ $ kubectl -n {{ .Release.Namespace }} get deployments
 
 The Mu platform can be accessed at the following ingress url {{ template "mu.public.ui.url" . }}
 
