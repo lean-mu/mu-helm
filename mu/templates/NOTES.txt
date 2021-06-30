@@ -89,6 +89,11 @@ Gets details about the deployment of the pod
 Gets logs from your application
  $ kubectl -n {{ .Release.Namespace }} logs <POD_NAME>
 
+= ENTERPRISE =====
+
+If you are serious about Mu, please consider enterprise support
+
+
 {{- if not  .Values.mysql.persistence.enabled }}
 
 ############################################################################
