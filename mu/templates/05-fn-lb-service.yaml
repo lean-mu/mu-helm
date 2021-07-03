@@ -1,24 +1,21 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ template "fullname" . }}
+  name: {{ template "fullname" . }}-lb
   labels:
     app: {{ template "fullname" . }}
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     heritage: {{ .Release.Service }}
     release: {{ .Release.Name }}
   namespace: {{ .Release.Namespace | quote }}
-{{- if .Values.fn_api.service.annotations }}
+{{- if .Values.fn_lb.service.annotations }}
   annotations:
-{{ toYaml .Values.fn_api.service.annotations | indent 4 }}
+{{ toYaml .Values.fn_lb.service.annotations | indent 4 }}
 {{- end }}
 spec:
-  type: {{ .Values.fn_api.service.type }}
+  type: {{ .Values.fn_lb.service.type }}
   ports:
   - name: api
-    port: {{ .Values.fn_api.service.port }}
-    targetPort: {{ .Values.fn_api.service.port }}
-  - name: runner-lb
     port: {{ .Values.fn_lb.service.port }}
     targetPort: {{ .Values.fn_lb.service.port }}
   selector:

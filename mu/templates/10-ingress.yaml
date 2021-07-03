@@ -37,7 +37,7 @@ spec:
         path: {{ template "nginx.path.groupping" (merge (dict "path" .Values.ingress.api.context) .) }}
         backend:
           service:
-            name: {{ template "fullname" . }}
+            name: {{ template "fullname" . }}-api
             port: 
               number: {{ .Values.fn_api.service.port }}
 {{- end }}
@@ -84,7 +84,7 @@ spec:
         path: {{ template "nginx.path.groupping" (merge (dict "path" .Values.ingress.fn.context) .) }}
         backend:
           service:
-            name: {{ template "fullname" . }}
+            name: {{ template "fullname" . }}-lb
             port: 
               number: {{ .Values.fn_lb.service.port }}
 {{- end }}

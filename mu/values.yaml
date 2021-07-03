@@ -73,6 +73,7 @@ fn_runner:
     annotations: {} # Fn runner service annotations
 
 fn_lb:
+  replicas: 1
   image: leanmu/lbnode
   tag: latest
   resources:
@@ -90,7 +91,7 @@ fn_lb:
     annotations: {}
 
 fn_api:
-  # image: fnproject/fnserver
+  replicas: 1
   image: leanmu/apinode
   tag: latest
   resources:
