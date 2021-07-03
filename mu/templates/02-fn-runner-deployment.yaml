@@ -44,6 +44,12 @@ spec:
             privileged: true
           ports:
           - containerPort: {{ .Values.fn_runner.service.grpc_port }}
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: {{ .Values.fn_runner.service.port }}
+            initialDelaySeconds: 5
+            periodSeconds: 10
           env:
           - name: FN_LOG_LEVEL
             value: {{ .Values.logLevel.fn | quote }}
@@ -53,6 +59,8 @@ spec:
           - name: GIN_MODE
             value: "debug"
         {{- end }}
+          - name: FN_PORT
+            value: {{ .Values.fn_runner.service.port | quote }}
           - name: FN_GRPC_PORT
             value: {{ .Values.fn_runner.service.grpc_port | quote }}
         {{- if .Values.fn_docker_auth.enabled }}

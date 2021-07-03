@@ -49,10 +49,16 @@ spec:
           - containerPort: {{ .Values.fn_api.service.port }}
           readinessProbe:
             httpGet:
+              path: /health
+              port: {{ .Values.fn_api.service.port }}
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
               path: /v2/apps
               port: {{ .Values.fn_api.service.port }}
-            initialDelaySeconds: 3
-            periodSeconds: 3
+            initialDelaySeconds: 10
+            periodSeconds: 30
           env:
           - name: FN_LOG_LEVEL
             value: {{ .Values.logLevel.api | quote }}
@@ -82,6 +88,12 @@ spec:
             privileged: true
           ports:
           - containerPort: {{ .Values.fn_lb.service.port }}
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: {{ .Values.fn_lb.service.port }}
+            initialDelaySeconds: 5
+            periodSeconds: 10
           env:
           - name: FN_LOG_LEVEL
             value: {{ .Values.logLevel.fn | quote }}

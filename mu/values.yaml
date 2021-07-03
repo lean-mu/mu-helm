@@ -67,6 +67,7 @@ fn_runner:
   nodeSelector: {} # K8s node selectors
   tolerations: [] #K8s mode taint toleration
   service:
+    port: 80
     grpc_port: 9191 # Fn runner service GRPC port
     type: ClusterIP # Fn runner service type
     annotations: {} # Fn runner service annotations
@@ -105,8 +106,6 @@ fn_api:
     port: 80
     type: ClusterIP
     annotations: {}
-  # env:
-  #   FN_NODE_TYPE: "api"
 
 fn_ui:
   enabled: true
