@@ -75,7 +75,7 @@ Create a default fully qualified mysql name.
 {{- end }}
 
 {{- define "mu.private_api_url" -}}
-{{- printf "http://%s.%s.svc.cluster.local:%d" .Release.Name .Release.Namespace (.Values.fn_api.service.port | int) }}
+{{- printf "http://%s%s.%s.svc.cluster.local:%d" .Release.Name "-api" .Release.Namespace (.Values.fn_api.service.port | int) }}
 {{- end }}
 
 {{- define "mu.private_mysql_url" -}}

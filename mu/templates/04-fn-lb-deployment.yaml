@@ -26,6 +26,9 @@ spec:
          prometheus.io/port: {{ .Values.fn_lb.service.port | quote }}
          prometheus.io/path: '/metrics'
     spec:
+      {{- if .Values.rbac }}
+      serviceAccountName: {{ .Release.Name }}-service-account
+      {{- end }}
       {{- if .Values.fn_lb.nodeSelector }}
       nodeSelector:
 {{ toYaml .Values.fn_lb.nodeSelector | indent 8 }}
@@ -44,12 +47,12 @@ spec:
             privileged: true
           ports:
           - containerPort: {{ .Values.fn_lb.service.port }}
-          readinessProbe:
-            httpGet:
-              path: /health
-              port: {{ .Values.fn_lb.service.port }}
-            initialDelaySeconds: 5
-            periodSeconds: 10
+        #   readinessProbe:
+        #     httpGet:
+        #       path: /health
+        #       port: {{ .Values.fn_lb.service.port }}
+        #     initialDelaySeconds: 5
+        #     periodSeconds: 10
           env:
           - name: FN_LOG_LEVEL
             value: {{ .Values.logLevel.fn | quote }}
