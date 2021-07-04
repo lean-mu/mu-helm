@@ -1,0 +1,128 @@
+@startuml kubernetes
+
+footer Kubernetes Plant-UML
+scale max 1024 width
+
+skinparam nodesep 10
+skinparam ranksep 10
+
+' Kubernetes
+!define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
+!includeurl KubernetesPuml/kubernetes_Common.puml
+!includeurl KubernetesPuml/kubernetes_C4.puml
+!includeurl KubernetesPuml/kubernetes_Context.puml
+!includeurl KubernetesPuml/kubernetes_Simplified.puml
+
+!includeurl KubernetesPuml/OSS/KubernetesSvc.puml
+!includeurl KubernetesPuml/OSS/KubernetesIng.puml
+!includeurl KubernetesPuml/OSS/KubernetesPod.puml
+!includeurl KubernetesPuml/OSS/KubernetesDeploy.puml
+!includeurl KubernetesPuml/OSS/KubernetesApi.puml
+
+
+!define AzurePuml https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
+!includeurl AzurePuml/AzureCommon.puml
+!includeurl AzurePuml/AzureSimplified.puml
+
+!includeurl AzurePuml/Containers/AzureContainerRegistry.puml
+
+
+!define SPRITESURL https://raw.githubusercontent.com/plantuml-stdlib/gilbarbara-plantuml-sprites/v1.0/sprites
+!includeurl SPRITESURL/prometheus.puml
+
+collections "Client Apps" as clientapps
+collections "Helm Charts" as helmchart
+actor "DevOps" as devopsactor
+
+left to right direction
+
+' Kubernetes Components
+Cluster_Boundary(cluster, "Kubernetes Cluster") {
+    KubernetesApi(kubernetesapi, "Kubernetes API", "")
+    KubernetesIng(ingress, "fn.mu.local", "")
+
+    Namespace_Boundary(nsFn, "mu-fn") {
+        KubernetesSvc(lbsvc, "mu-lb", "")
+        KubernetesSvc(runnersvc, "mu-runner-headless", "")
+        KubernetesSvc(asyncsvc, "mu-async", "")
+        KubernetesSvc(stepsvc, "mu-step", "")
+        KubernetesSvc(natssvc, "mu-nats", "")
+
+        KubernetesPod(lbpod, "mu-lb", "")
+        KubernetesPod(runnerpod, "mu-runner", "")
+        KubernetesPod(asyncpod, "mu-async", "")
+        KubernetesPod(steppod, "mu-step", "")
+        KubernetesPod(natspod, "mu-nats", "")
+        
+        KubernetesDeploy(lbdeploy,"mu-lb","")
+        KubernetesDeploy(runnerdeploy,"mu-runner","")
+        KubernetesDeploy(asyncdeploy,"mu-async","")
+        KubernetesDeploy(stepdeploy,"mu-step","")
+        KubernetesDeploy(natsdeploy,"mu-nats","")
+
+        Rel_U(lbdeploy,lbpod, "replica=1")
+        Rel_U(runnerdeploy,runnerpod, "replica=1")
+        Rel_U(asyncdeploy,asyncpod, "replica=1")
+        Rel_U(stepdeploy,steppod, "replica=1")
+        Rel_U(natsdeploy,natspod, "replica=1")
+
+
+        Rel(lbsvc, lbpod, "80")
+        Rel(asyncsvc, asyncpod, " ")
+        Rel(stepsvc, steppod, " ")
+        Rel(natssvc, natspod, " ")
+
+        Rel(lbpod, runnerpod, "grpc:9191")
+        Rel(lbpod, runnersvc, "listens")
+        Rel(asyncpod, natssvc, " ")
+
+    }
+    Namespace_Boundary(mgmtns, "mu-mgmt") {
+        KubernetesSvc(apisvc, "mu-api", "")
+        KubernetesPod(apipod, "mu-api", "")
+        KubernetesPod(mysqlpod, "mysql", "")
+
+        KubernetesDeploy(apideploy,"mu-api","")
+        KubernetesDeploy(mysqldeploy,"mu-mysql","")
+
+        Rel(apipod,mysqlpod," ")
+        Rel_U(apideploy,apipod, "replica=1")
+        Rel_U(mysqldeploy,mysqlpod, "replica=1")
+        Rel(apisvc,apipod, " ")
+
+    }
+    Namespace_Boundary(opsns, "mu-ops") {
+        KubernetesPod(uipod, "fn-ui", "")
+        KubernetesPod(grafanapod, "grafana", "")
+        KubernetesPod(lokipod, "loki", "")
+        KubernetesPod(vectorpod, "vector", "")
+        KubernetesPod(prometheuspod, "prometheus", "")
+
+        KubernetesDeploy(uideploy,"mu-ui","")
+
+        Rel_U(uideploy,uipod, "replica=1")
+
+        Rel(grafanapod,prometheuspod," ")
+        Rel(vectorpod,lokipod," ")
+        Rel(grafanapod,lokipod," ")
+        Rel(vectorpod, kubernetesapi, "listen")
+    
+    }
+}
+
+AzureContainerRegistry(dockerregistry, "Docker Registry", " ")
+
+Rel_R(runnerpod,dockerregistry, " ")
+Rel(clientapps,ingress," ")
+Rel(devopsactor,ingress," ")
+Rel(devopsactor,kubernetesapi," ")
+Rel(devopsactor,helmchart," ")
+Rel(ingress,lbsvc,"/")
+Rel(ingress,apisvc,"/api")
+Rel(ingress,stepsvc,"/step")
+Rel(ingress,asyncsvc,"/async")
+Rel(helmchart,kubernetesapi," ")
+
+
+
+@enduml
