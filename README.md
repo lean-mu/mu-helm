@@ -14,18 +14,20 @@ This chart deploys a fully functioning instance of  [Mu](https://github.com/lean
 - Resume from failure - just run it again
 - Deployment ordering - pick the order
 - Parametrizable values.yaml
-- Ease - this one should be first
+- Automation - no more manual deployments (ie. operators)
+- Ease & Automation - this one should be first
 
 ## Prerequisites
 
-Before installing Mu you'll need:
+Before installing Mu, you'll need:
+
 1. A computer running Linux or MacOS.
 2. A k8s cluster preferably with persistent volume provisioning support.
 3. [Helmsman](https://github.com/Praqma/helmsman) and indirectly the Helm 3 package manager, installed locally.
 
 ## Installation
 
-#### If you need a local cluster
+### If you need a local cluster
 
 To setup a local development environment, start minikube as follows:
 
