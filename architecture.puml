@@ -26,20 +26,72 @@ skinparam ranksep 10
 
 !includeurl AzurePuml/Containers/AzureContainerRegistry.puml
 
-
-!define SPRITESURL https://raw.githubusercontent.com/plantuml-stdlib/gilbarbara-plantuml-sprites/v1.0/sprites
-!includeurl SPRITESURL/prometheus.puml
-
 collections "Client Apps" as clientapps
 collections "Helm Charts" as helmchart
 actor "DevOps" as devopsactor
 
-left to right direction
+top to bottom direction
+
+AzureContainerRegistry(dockerregistry, "Docker Registry", " ")
 
 ' Kubernetes Components
 Cluster_Boundary(cluster, "Kubernetes Cluster") {
-    KubernetesApi(kubernetesapi, "Kubernetes API", "")
+ 
     KubernetesIng(ingress, "fn.mu.local", "")
+    KubernetesApi(kubernetesapi, "Kubernetes API", "")
+
+    Namespace_Boundary(mgmtns, "mu-mgmt") {
+        KubernetesSvc(apisvc, "mu-api", "")
+        KubernetesPod(apipod, "mu-api", "")
+        KubernetesPod(mysqlpod, "mysql", "")
+
+        KubernetesDeploy(apideploy,"mu-api","")
+        KubernetesDeploy(mysqldeploy,"mu-mysql","")
+
+        Rel(apipod,mysqlpod," ")
+        Rel_U(apideploy,apipod, "replica=1")
+        Rel_U(mysqldeploy,mysqlpod, "replica=1")
+        Rel(apisvc,apipod, " ")
+
+    }
+
+    Namespace_Boundary(opsns, "mu-ops") {
+
+        KubernetesSvc(uisvc, "mu-ui", "")
+        KubernetesSvc(grafanasvc, "mu-grafana", "")
+        KubernetesSvc(prometheussvc, "mu-prometheus-server", "")
+        KubernetesSvc(lokisvc, "mu-loki", "")
+        KubernetesSvc(lokihlsvc, "mu-loki-headless", "")
+
+        KubernetesPod(uipod, "mu-ui", "")
+        KubernetesPod(grafanapod, "mu-grafana", "")
+        KubernetesPod(lokipod, "mu-loki", "")
+        KubernetesPod(vectorpod, "mu-vector", "")
+        KubernetesPod(prometheuspod, "mu-prometheus", "")
+
+        KubernetesDeploy(uideploy,"mu-ui","")
+        KubernetesDeploy(grafanadeploy,"mu-grafana","")
+        KubernetesDeploy(prometheusdeploy,"mu-prometheus-server","")
+
+
+        Rel(uisvc, uipod, "4000")
+        Rel(grafanasvc, grafanapod, "80")
+        Rel(prometheussvc, prometheuspod, " ")
+        Rel(lokisvc,lokihlsvc,"listens")
+        Rel(lokisvc,lokipod," ")
+        
+        Rel(grafanapod,prometheussvc," ")
+        Rel(vectorpod,lokisvc," ")
+        Rel(grafanapod,lokisvc," ")
+        Rel(vectorpod, kubernetesapi, "listen")
+
+        Rel(grafanadeploy, grafanapod," ")
+        Rel(uideploy,uipod, "replica=1") 
+        Rel(prometheusdeploy, prometheuspod," ")
+        Rel(prometheusdeploy, lokipod," ")
+
+    
+    }
 
     Namespace_Boundary(nsFn, "mu-fn") {
         KubernetesSvc(lbsvc, "mu-lb", "")
@@ -67,53 +119,18 @@ Cluster_Boundary(cluster, "Kubernetes Cluster") {
         Rel_U(natsdeploy,natspod, "replica=1")
 
 
-        Rel(lbsvc, lbpod, "80")
-        Rel(asyncsvc, asyncpod, " ")
-        Rel(stepsvc, steppod, " ")
-        Rel(natssvc, natspod, " ")
+        Rel(lbsvc, lbpod, "90")
+        Rel(asyncsvc, asyncpod, "80")
+        Rel(stepsvc, steppod, "80")
+        Rel(natssvc, natspod, "6222")
 
-        Rel(lbpod, runnerpod, "grpc:9191")
+        Rel(lbpod, runnerpod, "FN_GRPC_PORT:9191")
         Rel(lbpod, runnersvc, "listens")
         Rel(asyncpod, natssvc, " ")
 
     }
-    Namespace_Boundary(mgmtns, "mu-mgmt") {
-        KubernetesSvc(apisvc, "mu-api", "")
-        KubernetesPod(apipod, "mu-api", "")
-        KubernetesPod(mysqlpod, "mysql", "")
 
-        KubernetesDeploy(apideploy,"mu-api","")
-        KubernetesDeploy(mysqldeploy,"mu-mysql","")
-
-        Rel(apipod,mysqlpod," ")
-        Rel_U(apideploy,apipod, "replica=1")
-        Rel_U(mysqldeploy,mysqlpod, "replica=1")
-        Rel(apisvc,apipod, " ")
-
-    }
-    Namespace_Boundary(opsns, "mu-ops") {
-        KubernetesPod(uipod, "fn-ui", "")
-        KubernetesPod(grafanapod, "grafana", "")
-        KubernetesPod(lokipod, "loki", "")
-        KubernetesPod(vectorpod, "vector", "")
-        KubernetesPod(prometheuspod, "prometheus", "")
-
-        KubernetesDeploy(uideploy,"mu-ui","")
-
-        Rel_U(uideploy,uipod, "replica=1")
-
-        Rel(grafanapod,prometheuspod," ")
-        Rel(vectorpod,lokipod," ")
-        Rel(grafanapod,lokipod," ")
-        Rel(vectorpod, kubernetesapi, "listen")
-    
-    }
-}
-
-AzureContainerRegistry(dockerregistry, "Docker Registry", " ")
-
-Rel_R(runnerpod,dockerregistry, " ")
-Rel(clientapps,ingress," ")
+    Rel(clientapps,ingress," ")
 Rel(devopsactor,ingress," ")
 Rel(devopsactor,kubernetesapi," ")
 Rel(devopsactor,helmchart," ")
@@ -121,7 +138,16 @@ Rel(ingress,lbsvc,"/")
 Rel(ingress,apisvc,"/api")
 Rel(ingress,stepsvc,"/step")
 Rel(ingress,asyncsvc,"/async")
+Rel(ingress,uisvc,"/ui")
+Rel(ingress,grafanasvc,"/grafana")
 Rel(helmchart,kubernetesapi," ")
+Rel(prometheuspod,kubernetesapi," ")
+
+}
+
+
+Rel_L(runnerpod,dockerregistry, " ")
+
 
 
 
