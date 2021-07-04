@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="630.3539px" preserveAspectRatio="none" style="width:1024px;height:630px;background:#FFFFFF;" version="1.1" viewBox="0 0 1024 630" width="1024.4335px" zoomAndPan="magnify"><defs><filter height="300%" id="f1ia1jfaygr1s" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="0.8670618120237087"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="1.7341236240474174" dy="1.7341236240474174" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ae7709657f611b622ade1638c535e86e]
+cluster cluster--><rect fill="#FFFFFF" height="523.7053" rx="5.4191" ry="5.4191" style="stroke:#326CE5;stroke-width:0.6502963590177815;" width="962.8721" x="58.9602" y="39.5563"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="67.6308" x="506.5809" y="47.1296">Kubernetes Cluster</text><!--MD5=[fa53317c80d11e948943c8a508f23333]
+cluster mgmtns--><rect fill="#FFFFFF" height="81.9373" rx="5.4191" ry="5.4191" style="stroke:#FF4216;stroke-width:0.6502963590177815;" width="278.3268" x="643.5766" y="264.9924"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="37.2837" x="764.0982" y="272.5656">mu-mgmt</text><text fill="#000000" font-family="sans-serif" font-size="5.2024" font-weight="bold" lengthAdjust="spacing" textLength="33.8154" x="765.8323" y="279.0584">[Namespace]</text><!--MD5=[d9172af58f8d1e1baea0273e65174e05]
+cluster opsns--><rect fill="#FFFFFF" height="195.5224" rx="5.4191" ry="5.4191" style="stroke:#FF4216;stroke-width:0.6502963590177815;" width="485.5546" x="453.4733" y="59.0652"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="29.0466" x="681.7273" y="66.6384">mu-ops</text><text fill="#000000" font-family="sans-serif" font-size="5.2024" font-weight="bold" lengthAdjust="spacing" textLength="33.8154" x="679.3429" y="73.1312">[Namespace]</text><!--MD5=[66b4f07350c950ff05b0a512f7e4a208]
+cluster nsFn--><rect fill="#FFFFFF" height="195.5224" rx="5.4191" ry="5.4191" style="stroke:#FF4216;stroke-width:0.6502963590177815;" width="573.9949" x="145.2329" y="357.3345"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="23.8442" x="420.3082" y="364.9077">mu-fn</text><text fill="#000000" font-family="sans-serif" font-size="5.2024" font-weight="bold" lengthAdjust="spacing" textLength="33.8154" x="415.3226" y="371.4005">[Namespace]</text><!--MD5=[967c2b1a156e498aabfdc089710fb9a5]
+entity ingress--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="48.1219" x="65.8967" y="287.3192"/><image height="28.613" width="30.3472" x="74.7841" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAAEZUlEQVR4Xt1aO45UMRDc084V5gpcgStASrYSKckGxEgTIESABCsChAiQTGt66enXn3LbzzOCLVUAD9uvy+4u99vlrj073NkH/z+uLun+w/fD6xPzxdvPjz9/2xGrcUVJWozm8c3Hh08/7Oh1uIqkV++/eiU3E7ZSEiXVy3dffPSYdJh2oX1YI4nEUJ34cOukg7WLzmKvpNO3X5RCPsQ50iHv9495SVQJC8Vo7jTGGUkkxsexnCSMUsC+u4AxSZkv72d24BPGWJI0Z2VDpLjBfg0J60jab2VFcsRds6k4PpJ0GzFMOQTaRKyKiGsslXRLPQclidHNc2CJsSSa4Fe5Kn2p4K6KNJvxgliSsWlanZI45NBhUhy0VMhw1/FtYUf/RSzJnHv4PkYl9Zkk3k4uAKyfRRVLKk5mULH69xlSWHgRjDAXMpNYIKkVruDs9XX40srKKZDkd70rqUWvFPrSn4PPQDvijECSD64iqSXpUbkcu8gqyo47I5DkZxYlNbeRWW4MAfhemM+LJZkLrT4xg08ZzfDD0UryheSJ7Utvambc3Mtphvvd7SFoop3jJXW9i5nFytCL+NwLC8NYyGO5XdazGFaSf1lGH6uG3mDjEOErtKRuP67p88VK8nMAsZvpbZaIs1ySAcU0EfoYNpJMcVcY1gDDJBiNBLXOkjLBgL6cNpJGd4jpj16gzQbn0mgHrGleupE0t6jfJ425bRqi2dONJD+6SGyAIN+W0LjlRdJEIWmGt55g7vyLNBt6kQT6jiJxe4prCf9rl/pFF0kTbnM475CxNbX4BjgLaDv25Kcup4skP67L47kz0rHyE1nTACQCnzAYgKkTZJckOZNKX8fIDFBiCtulLnUr8ySp0q0amsrRaVPvlbLVJuxE5j5JGs3j0N9AX2fgI/bWMhqSTHyS5EdoUqyaoR6GzhkfpYCyi3/WJQwrMMvSkFIFJUnh+0KYIOoTM9S7ctnBlZJ8QeJeqYjH2reTPSV8xBVJmVNhA6wjNBVNGXkxcbATFUlgOqi9IYRbxtRX/KZtzeZ0JXW3EFhFBVkKMI27biTpPkATS8JJKwS9EgZ2CH8HbiS1qMQPUFK9hcG9Uga8X6H9WEktWoXqxFxNQv8awOP2B12a4Rl217cTzggktcJay2mKrWLc2ZnHklpuFVeiloSLx483SCW13v27lhJipTjxrYAkZQbY5cP4/8VhSZVWtXt3I0mttmdLSC/qFs8hsTiDjqRW2zlDPiXyGDJP+jPVhmwNPaG/3o//6pppg4vQl9RgsxOSgmbfl1ufHYye8L3Hmz3qq5nFGZQktUEDFElyOPyETkbOnJ4MSQIWZ1CV1EYMcLkkbHEGA5LCXilkJoki4ydDide1OIMBSS3qlUJqe+AnYgZiDyzSzzWsWJzBmKQ2ZYBCik+m4+8FYdESNIYltXED1GRPP8HfNQlPUS/bxYykNmiAczQfdnVMSprulYocsjiDSUmMSvKMMvt2qmOXpH8Tz1DSH+E+zWvy5oAdAAAAAElFTkSuQmCC" y="291.6545"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="90.8247" y="326.1355"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="39.4513" x="70.232" y="334.1219">fn.mu.local</text><!--MD5=[b6bd2fedcde704fe9056ed8111f7d390]
+entity kubernetesapi--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="62.862" x="952.0339" y="55.8137"/><image height="28.613" width="30.3472" x="968.2913" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAAE1UlEQVR4Xt1aS44UMQzltLlCX2GuMFcYtuxGYsuGBWukXiDEAglGLBBigRSsvC63y3ZSjqt6BPNkjVrpfPxi+yVV06/qi8Mr3fD/4+aUHj/+KK/PsLu3X55+/dE9jsYNKUky0k5vPr3//FP3Pg43ofTw4Ztl8mzEjqRESXX/7qv1fmwUTD3RPhxDichQnVh340aB1ZNmsZfS+ftvSiHrYs4oyPv1I0+JKuFAMtJ2CmOGEpGxfhxuRIxSQK8dwBylni7fzhLCGKKUk7IDbYrYBqX9UlZaClF4D9mUiOKPKO0nQzRkPdAGRU7hTRvXWJfSTj5jOabN3qmWg8l9SjTAzhI0isNgPYk9xwBtmZ5ugU8pJ9O5GwBlUS4j9EQLfEpTpUw7nSMjkSDWywWfkh3vGpGJSFAcU8R6IpGnNBuZ3qZaBO+NvXJyKNGMdrwyWlIPGwJ7zzJIsR3fd4KZr4c1OJQiR8dsiNxdJ1a634LgzUsPa3Ao2ZHW4tcTgLzn+zVfrwZ1GDxF3DgnKcULozb/bKISw/G+uIFV5iaLpnR4IaHWbSmTN7ZRIlJOrieaUiSJx64oYLNt2cDjwVQRT4pXTppSJNyDhLEJyWIjR3EuuNsMBMvJrqgp2THW7CwAlNolzOlHe08k8ZnM7cyI7K/VmBWlyMbIfUVuwDNOfbsGICPjKpVFrpxWlCLpK6tCnmDUjk215YFu/ECBKJV+tBkRf4oppxWlyP1K6iaiygdOXUJBLTKpsNkIDhnv/SaliPzaeVaUbG9rtspVFvHWcjx7jypyVA92lDVVkFdKkUIqwg9+gOMWADxP4gUIR4ki/CheQqDqqP9AJCKJo06IK6XeXkqTtciNKu6IEv5Sf64f2acaX3tJmCinK6WIvMjSp89wSzbi7kPtUjmsYACs0fShRylRTldKtp81u9lI19NyznBPpBOc7kk2nwH6izWsG9Zk6s5RcpfnFKJvWaBBA7HqRQCp3iMMRMoBS/OQC6VgfIt3kiI4MoDsJb7qOb0ZpbhXRZTThZJM/U2zLlrJehLvnG26AhxeHFn669iFiI1HXSjZHgMbVDNDKZX1WHWwmxKRb2m8RIZS8W5WCogS+c0iQbGiVamdL4S4drjnklSaoPEkSUplWAMKvZLohTp4FinTUcrNYqXCBVO6W/8LwwZHdp41nuEq4rO5C3PdUuCbBLdgLSsbOKntKpsma3V1bc1N18sfCWIuV0VFie8vyDmgkmVFCVeBWYsIYAQJSSheSa8o1Wwqq7twAlMHI5srvJpSzUqFLYw4grcea3qiBodSzeZAUAAVcnlR+jXsU6rZSsUj+pTlFnLVBehSqqnz93lsnOQjSjkBDBq5lZOETSkaUao7CvdG5kqcwgalmpLXU3uXcm6vuPiiQIZGTPjQXvPbsWPTznnYplTn70qo+7L8tKk0McQHbPOp/ZN3drN6EqcQolTnBfChvd+isKAgJYFzezs5S2kgcQpRSnVGAGn5x/a6GE9ExVDClTxOaSxxChOU4mfi0/JjKrhS9iXepsQpTFCq4bvSffs1FJ5eoQdIwoQ8RCROYY5STQlgWSfelAUlQWKaUp0XwJKlJB+x4shQqvMCmLDcJbimKd30rlQmJU4hSQlI5NKmnTqvKePYRenfxAuk9BcJDRk2+sDk1QAAAABJRU5ErkJggg==" y="60.149"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="984.3319" y="94.63"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="54.1914" x="956.3692" y="102.6164">Kubernetes API</text><!--MD5=[6091a28e30809feee7501cc04a3c14f3]
+entity apisvc--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="39.0178" x="650.5131" y="287.3192"/><image height="28.613" width="30.3472" x="654.8484" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADhElEQVR4Xt2asY7bMAyG72n9CnmFe4W+wnXtVqBrFw+dC9xQFB0KtEGHouhQQCXMsyyTlERSlqML8SMIHMnSF4m/pMQP4e7igV54/dEd6f3nX9PbZ9Tjh2/XP/9oiaOjI1IKk+ry7sv89TctfVx0QXr69IOTnAZ2JBJMqjcfv/PelwWDSW/UFscgAQzkCe+uXjCw9KbeaEV6/vkXphDvok8wyO3+4UeCTDgQJlWjMXqQAIb343ABGEwB2rYibEg5X+4nhzGqkHxWdqBMYBWkdis7VhrHLyENBZOqnGNZpGF5UAVLlJGgAr9LVTDjoaJVPsuB3KadXkNG8tk0INEbKcLXFojeaA0ZyedvJyNdM3NPRuL1NToZKWcSrxgpl04CEtDz+hqdjDRl0klA0hzgRI2LxGsqVTDxsCwMonwmjhLT6UiknOL2jH/UKPHgSJHciVRQPyRxqlOklmmQUz+kSUonitTjoNoVCRM1DYrE67SrKxI/buyQrq7dalVdkXg67ZD0iQQ3gsLQV43i3OAf5WRaG1OEQJD0ZyQ+3IcHbzQnkk47JF46J0TCr7MqLAwN849EYWf0RjXvf5bYkEyJhL1UTlQYfNP9sT96JLx/jA1ptuy1hkKKVTA2JNOxbzSkNJ02JF6uoNGQ0nS6E6T0OPiCpNmtQhtRESm9mCuM7eF/HGJhUh67VCgsaiVakZ5qS1tsqRBp23zrRSJN3eoqp7GuWPgFiZcgGh8pHgfvByk6xP0g0VGqetf4SLHwZuLlPevgSOnvKrtta8EuR0Yi1XdIhdXwsvwPVxZphhdIlU4KwOMFUhXWGP6b6w4p6NbccSTOHYoUFFYxjmjXlxCQgnFXfivl0lVGCkWrGEFz/g/2LFJQrL+3UjzMi1FCKhjgDUWO5TxKSKG2IJwv0eJIVJCC4txBBNYCKwEIv470UbB5eZIKHw4COayVdk6KOlKo7ZV4q/gG2KAi9Bu/lMfl+a1pcSqEJAtuVTmLI6FCChYDhI7CCAAGVsExmZb9BF70pWjB4khokYLFAKHf0Pvr+vwRDgu++pDKFkfCgKTZK12WnyXwfZxy8IpbNbweUeGKZk2vWhwJA1LQ7ZUAINoDzj0cmdh7kz1oLI6EDSnYDbBRSktIw4wUjAbYovRgpw8PUrAYoFvVc2EunEgO1zLJZHEknEgYPfIKxt8332I0IY0Zd4j0H/5OqJlk3lKMAAAAAElFTkSuQmCC" y="291.6545"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="670.8891" y="326.1355"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="26.8789" x="656.5826" y="334.1219">mu-api</text><!--MD5=[dc35867f9b1997ce37e93b618cc6f3e2]
+entity apipod--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="39.0178" x="765.6156" y="287.3192"/><image height="28.613" width="30.3472" x="769.9509" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="291.6545"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="785.9915" y="326.1355"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="26.8789" x="771.685" y="334.1219">mu-api</text><!--MD5=[e50b0d1228532291d80ba0ced0dbf7a7]
+entity mysqlpod--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="39.0178" x="875.9492" y="287.3192"/><image height="28.613" width="30.3472" x="880.2845" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="291.6545"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="896.3251" y="326.1355"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="21.6765" x="884.6198" y="334.1219">mysql</text><!--MD5=[efa812d9d3c442869bdd451822fe79eb]
+entity uisvc--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="39.0178" x="466.9128" y="110.0051"/><image height="28.613" width="30.3472" x="471.2481" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADhElEQVR4Xt2asY7bMAyG72n9CnmFe4W+wnXtVqBrFw+dC9xQFB0KtEGHouhQQCXMsyyTlERSlqML8SMIHMnSF4m/pMQP4e7igV54/dEd6f3nX9PbZ9Tjh2/XP/9oiaOjI1IKk+ry7sv89TctfVx0QXr69IOTnAZ2JBJMqjcfv/PelwWDSW/UFscgAQzkCe+uXjCw9KbeaEV6/vkXphDvok8wyO3+4UeCTDgQJlWjMXqQAIb343ABGEwB2rYibEg5X+4nhzGqkHxWdqBMYBWkdis7VhrHLyENBZOqnGNZpGF5UAVLlJGgAr9LVTDjoaJVPsuB3KadXkNG8tk0INEbKcLXFojeaA0ZyedvJyNdM3NPRuL1NToZKWcSrxgpl04CEtDz+hqdjDRl0klA0hzgRI2LxGsqVTDxsCwMonwmjhLT6UiknOL2jH/UKPHgSJHciVRQPyRxqlOklmmQUz+kSUonitTjoNoVCRM1DYrE67SrKxI/buyQrq7dalVdkXg67ZD0iQQ3gsLQV43i3OAf5WRaG1OEQJD0ZyQ+3IcHbzQnkk47JF46J0TCr7MqLAwN849EYWf0RjXvf5bYkEyJhL1UTlQYfNP9sT96JLx/jA1ptuy1hkKKVTA2JNOxbzSkNJ02JF6uoNGQ0nS6E6T0OPiCpNmtQhtRESm9mCuM7eF/HGJhUh67VCgsaiVakZ5qS1tsqRBp23zrRSJN3eoqp7GuWPgFiZcgGh8pHgfvByk6xP0g0VGqetf4SLHwZuLlPevgSOnvKrtta8EuR0Yi1XdIhdXwsvwPVxZphhdIlU4KwOMFUhXWGP6b6w4p6NbccSTOHYoUFFYxjmjXlxCQgnFXfivl0lVGCkWrGEFz/g/2LFJQrL+3UjzMi1FCKhjgDUWO5TxKSKG2IJwv0eJIVJCC4txBBNYCKwEIv470UbB5eZIKHw4COayVdk6KOlKo7ZV4q/gG2KAi9Bu/lMfl+a1pcSqEJAtuVTmLI6FCChYDhI7CCAAGVsExmZb9BF70pWjB4khokYLFAKHf0Pvr+vwRDgu++pDKFkfCgKTZK12WnyXwfZxy8IpbNbweUeGKZk2vWhwJA1LQ7ZUAINoDzj0cmdh7kz1oLI6EDSnYDbBRSktIw4wUjAbYovRgpw8PUrAYoFvVc2EunEgO1zLJZHEknEgYPfIKxt8332I0IY0Zd4j0H/5OqJlk3lKMAAAAAElFTkSuQmCC" y="114.3404"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="487.2887" y="148.8213"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="22.9771" x="474.9331" y="156.8078">mu-ui</text><!--MD5=[66ed79c447a35070b9bed72dcd625216]
+entity grafanasvc--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="52.0237" x="460.4098" y="194.9771"/><image height="28.613" width="30.3472" x="471.2481" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADhElEQVR4Xt2asY7bMAyG72n9CnmFe4W+wnXtVqBrFw+dC9xQFB0KtEGHouhQQCXMsyyTlERSlqML8SMIHMnSF4m/pMQP4e7igV54/dEd6f3nX9PbZ9Tjh2/XP/9oiaOjI1IKk+ry7sv89TctfVx0QXr69IOTnAZ2JBJMqjcfv/PelwWDSW/UFscgAQzkCe+uXjCw9KbeaEV6/vkXphDvok8wyO3+4UeCTDgQJlWjMXqQAIb343ABGEwB2rYibEg5X+4nhzGqkHxWdqBMYBWkdis7VhrHLyENBZOqnGNZpGF5UAVLlJGgAr9LVTDjoaJVPsuB3KadXkNG8tk0INEbKcLXFojeaA0ZyedvJyNdM3NPRuL1NToZKWcSrxgpl04CEtDz+hqdjDRl0klA0hzgRI2LxGsqVTDxsCwMonwmjhLT6UiknOL2jH/UKPHgSJHciVRQPyRxqlOklmmQUz+kSUonitTjoNoVCRM1DYrE67SrKxI/buyQrq7dalVdkXg67ZD0iQQ3gsLQV43i3OAf5WRaG1OEQJD0ZyQ+3IcHbzQnkk47JF46J0TCr7MqLAwN849EYWf0RjXvf5bYkEyJhL1UTlQYfNP9sT96JLx/jA1ptuy1hkKKVTA2JNOxbzSkNJ02JF6uoNGQ0nS6E6T0OPiCpNmtQhtRESm9mCuM7eF/HGJhUh67VCgsaiVakZ5qS1tsqRBp23zrRSJN3eoqp7GuWPgFiZcgGh8pHgfvByk6xP0g0VGqetf4SLHwZuLlPevgSOnvKrtta8EuR0Yi1XdIhdXwsvwPVxZphhdIlU4KwOMFUhXWGP6b6w4p6NbccSTOHYoUFFYxjmjXlxCQgnFXfivl0lVGCkWrGEFz/g/2LFJQrL+3UjzMi1FCKhjgDUWO5TxKSKG2IJwv0eJIVJCC4txBBNYCKwEIv470UbB5eZIKHw4COayVdk6KOlKo7ZV4q/gG2KAi9Bu/lMfl+a1pcSqEJAtuVTmLI6FCChYDhI7CCAAGVsExmZb9BF70pWjB4khokYLFAKHf0Pvr+vwRDgu++pDKFkfCgKTZK12WnyXwfZxy8IpbNbweUeGKZk2vWhwJA1LQ7ZUAINoDzj0cmdh7kz1oLI6EDSnYDbBRSktIw4wUjAbYovRgpw8PUrAYoFvVc2EunEgO1zLJZHEknEgYPfIKxt8332I0IY0Zd4j0H/5OqJlk3lKMAAAAAElFTkSuQmCC" y="199.3124"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="487.2887" y="233.7934"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="43.3531" x="464.7451" y="241.7798">mu-grafana</text><!--MD5=[2d9c895c6e21ce6b87c822b989cc1e4f]
+entity prometheussvc--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="93.6427" x="738.3031" y="194.9771"/><image height="28.613" width="30.3472" x="769.9509" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADhElEQVR4Xt2asY7bMAyG72n9CnmFe4W+wnXtVqBrFw+dC9xQFB0KtEGHouhQQCXMsyyTlERSlqML8SMIHMnSF4m/pMQP4e7igV54/dEd6f3nX9PbZ9Tjh2/XP/9oiaOjI1IKk+ry7sv89TctfVx0QXr69IOTnAZ2JBJMqjcfv/PelwWDSW/UFscgAQzkCe+uXjCw9KbeaEV6/vkXphDvok8wyO3+4UeCTDgQJlWjMXqQAIb343ABGEwB2rYibEg5X+4nhzGqkHxWdqBMYBWkdis7VhrHLyENBZOqnGNZpGF5UAVLlJGgAr9LVTDjoaJVPsuB3KadXkNG8tk0INEbKcLXFojeaA0ZyedvJyNdM3NPRuL1NToZKWcSrxgpl04CEtDz+hqdjDRl0klA0hzgRI2LxGsqVTDxsCwMonwmjhLT6UiknOL2jH/UKPHgSJHciVRQPyRxqlOklmmQUz+kSUonitTjoNoVCRM1DYrE67SrKxI/buyQrq7dalVdkXg67ZD0iQQ3gsLQV43i3OAf5WRaG1OEQJD0ZyQ+3IcHbzQnkk47JF46J0TCr7MqLAwN849EYWf0RjXvf5bYkEyJhL1UTlQYfNP9sT96JLx/jA1ptuy1hkKKVTA2JNOxbzSkNJ02JF6uoNGQ0nS6E6T0OPiCpNmtQhtRESm9mCuM7eF/HGJhUh67VCgsaiVakZ5qS1tsqRBp23zrRSJN3eoqp7GuWPgFiZcgGh8pHgfvByk6xP0g0VGqetf4SLHwZuLlPevgSOnvKrtta8EuR0Yi1XdIhdXwsvwPVxZphhdIlU4KwOMFUhXWGP6b6w4p6NbccSTOHYoUFFYxjmjXlxCQgnFXfivl0lVGCkWrGEFz/g/2LFJQrL+3UjzMi1FCKhjgDUWO5TxKSKG2IJwv0eJIVJCC4txBBNYCKwEIv470UbB5eZIKHw4COayVdk6KOlKo7ZV4q/gG2KAi9Bu/lMfl+a1pcSqEJAtuVTmLI6FCChYDhI7CCAAGVsExmZb9BF70pWjB4khokYLFAKHf0Pvr+vwRDgu++pDKFkfCgKTZK12WnyXwfZxy8IpbNbweUeGKZk2vWhwJA1LQ7ZUAINoDzj0cmdh7kz1oLI6EDSnYDbBRSktIw4wUjAbYovRgpw8PUrAYoFvVc2EunEgO1zLJZHEknEgYPfIKxt8332I0IY0Zd4j0H/5OqJlk3lKMAAAAAElFTkSuQmCC" y="199.3124"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="785.9915" y="233.7934"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="84.9721" x="742.6384" y="241.7798">mu-prometheus-server</text><!--MD5=[a9e4f2455bfc177764199b4c68178af6]
+entity lokisvc--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="39.0178" x="765.6156" y="138.1846"/><image height="28.613" width="30.3472" x="769.9509" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADhElEQVR4Xt2asY7bMAyG72n9CnmFe4W+wnXtVqBrFw+dC9xQFB0KtEGHouhQQCXMsyyTlERSlqML8SMIHMnSF4m/pMQP4e7igV54/dEd6f3nX9PbZ9Tjh2/XP/9oiaOjI1IKk+ry7sv89TctfVx0QXr69IOTnAZ2JBJMqjcfv/PelwWDSW/UFscgAQzkCe+uXjCw9KbeaEV6/vkXphDvok8wyO3+4UeCTDgQJlWjMXqQAIb343ABGEwB2rYibEg5X+4nhzGqkHxWdqBMYBWkdis7VhrHLyENBZOqnGNZpGF5UAVLlJGgAr9LVTDjoaJVPsuB3KadXkNG8tk0INEbKcLXFojeaA0ZyedvJyNdM3NPRuL1NToZKWcSrxgpl04CEtDz+hqdjDRl0klA0hzgRI2LxGsqVTDxsCwMonwmjhLT6UiknOL2jH/UKPHgSJHciVRQPyRxqlOklmmQUz+kSUonitTjoNoVCRM1DYrE67SrKxI/buyQrq7dalVdkXg67ZD0iQQ3gsLQV43i3OAf5WRaG1OEQJD0ZyQ+3IcHbzQnkk47JF46J0TCr7MqLAwN849EYWf0RjXvf5bYkEyJhL1UTlQYfNP9sT96JLx/jA1ptuy1hkKKVTA2JNOxbzSkNJ02JF6uoNGQ0nS6E6T0OPiCpNmtQhtRESm9mCuM7eF/HGJhUh67VCgsaiVakZ5qS1tsqRBp23zrRSJN3eoqp7GuWPgFiZcgGh8pHgfvByk6xP0g0VGqetf4SLHwZuLlPevgSOnvKrtta8EuR0Yi1XdIhdXwsvwPVxZphhdIlU4KwOMFUhXWGP6b6w4p6NbccSTOHYoUFFYxjmjXlxCQgnFXfivl0lVGCkWrGEFz/g/2LFJQrL+3UjzMi1FCKhjgDUWO5TxKSKG2IJwv0eJIVJCC4txBBNYCKwEIv470UbB5eZIKHw4COayVdk6KOlKo7ZV4q/gG2KAi9Bu/lMfl+a1pcSqEJAtuVTmLI6FCChYDhI7CCAAGVsExmZb9BF70pWjB4khokYLFAKHf0Pvr+vwRDgu++pDKFkfCgKTZK12WnyXwfZxy8IpbNbweUeGKZk2vWhwJA1LQ7ZUAINoDzj0cmdh7kz1oLI6EDSnYDbBRSktIw4wUjAbYovRgpw8PUrAYoFvVc2EunEgO1zLJZHEknEgYPfIKxt8332I0IY0Zd4j0H/5OqJlk3lKMAAAAAElFTkSuQmCC" y="142.5199"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="785.9915" y="177.0008"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="29.0466" x="770.6012" y="184.9873">mu-loki</text><!--MD5=[fc45c46b48397d95702abd266102f09d]
+entity lokihlsvc--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="73.2667" x="858.8247" y="138.1846"/><image height="28.613" width="30.3472" x="880.2845" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADhElEQVR4Xt2asY7bMAyG72n9CnmFe4W+wnXtVqBrFw+dC9xQFB0KtEGHouhQQCXMsyyTlERSlqML8SMIHMnSF4m/pMQP4e7igV54/dEd6f3nX9PbZ9Tjh2/XP/9oiaOjI1IKk+ry7sv89TctfVx0QXr69IOTnAZ2JBJMqjcfv/PelwWDSW/UFscgAQzkCe+uXjCw9KbeaEV6/vkXphDvok8wyO3+4UeCTDgQJlWjMXqQAIb343ABGEwB2rYibEg5X+4nhzGqkHxWdqBMYBWkdis7VhrHLyENBZOqnGNZpGF5UAVLlJGgAr9LVTDjoaJVPsuB3KadXkNG8tk0INEbKcLXFojeaA0ZyedvJyNdM3NPRuL1NToZKWcSrxgpl04CEtDz+hqdjDRl0klA0hzgRI2LxGsqVTDxsCwMonwmjhLT6UiknOL2jH/UKPHgSJHciVRQPyRxqlOklmmQUz+kSUonitTjoNoVCRM1DYrE67SrKxI/buyQrq7dalVdkXg67ZD0iQQ3gsLQV43i3OAf5WRaG1OEQJD0ZyQ+3IcHbzQnkk47JF46J0TCr7MqLAwN849EYWf0RjXvf5bYkEyJhL1UTlQYfNP9sT96JLx/jA1ptuy1hkKKVTA2JNOxbzSkNJ02JF6uoNGQ0nS6E6T0OPiCpNmtQhtRESm9mCuM7eF/HGJhUh67VCgsaiVakZ5qS1tsqRBp23zrRSJN3eoqp7GuWPgFiZcgGh8pHgfvByk6xP0g0VGqetf4SLHwZuLlPevgSOnvKrtta8EuR0Yi1XdIhdXwsvwPVxZphhdIlU4KwOMFUhXWGP6b6w4p6NbccSTOHYoUFFYxjmjXlxCQgnFXfivl0lVGCkWrGEFz/g/2LFJQrL+3UjzMi1FCKhjgDUWO5TxKSKG2IJwv0eJIVJCC4txBBNYCKwEIv470UbB5eZIKHw4COayVdk6KOlKo7ZV4q/gG2KAi9Bu/lMfl+a1pcSqEJAtuVTmLI6FCChYDhI7CCAAGVsExmZb9BF70pWjB4khokYLFAKHf0Pvr+vwRDgu++pDKFkfCgKTZK12WnyXwfZxy8IpbNbweUeGKZk2vWhwJA1LQ7ZUAINoDzj0cmdh7kz1oLI6EDSnYDbBRSktIw4wUjAbYovRgpw8PUrAYoFvVc2EunEgO1zLJZHEknEgYPfIKxt8332I0IY0Zd4j0H/5OqJlk3lKMAAAAAElFTkSuQmCC" y="142.5199"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="896.3251" y="177.0008"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="64.5961" x="863.16" y="184.9873">mu-loki-headless</text><!--MD5=[d3aae9061aecbe53028de958fa8e1eda]
+entity uipod--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="39.0178" x="650.5131" y="81.392"/><image height="28.613" width="30.3472" x="654.8484" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="85.7273"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="670.8891" y="120.2083"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="22.9771" x="658.5334" y="128.1948">mu-ui</text><!--MD5=[f8141265f42fc55d3ca6d4571c356cec]
+entity grafanapod--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="52.0237" x="644.0102" y="194.9771"/><image height="28.613" width="30.3472" x="654.8484" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="199.3124"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="670.8891" y="233.7934"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="43.3531" x="648.3455" y="241.7798">mu-grafana</text><!--MD5=[8bf1ce5b42976335a22668fedafc220e]
+entity lokipod--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="39.0178" x="875.9492" y="81.392"/><image height="28.613" width="30.3472" x="880.2845" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="85.7273"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="896.3251" y="120.2083"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="29.0466" x="880.9348" y="128.1948">mu-loki</text><!--MD5=[14f0bc3b49671d41919d0978afd5e003]
+entity vectorpod--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="46.3878" x="646.8281" y="138.1846"/><image height="28.613" width="30.3472" x="654.8484" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="142.5199"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="670.8891" y="177.0008"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="37.7172" x="651.1634" y="184.9873">mu-vector</text><!--MD5=[2b8d2ae6f18c4815d1513239341ac222]
+entity prometheuspod--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="67.6308" x="861.6427" y="194.9771"/><image height="28.613" width="30.3472" x="880.2845" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="199.3124"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="896.3251" y="233.7934"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="58.9602" x="865.978" y="241.7798">mu-prometheus</text><!--MD5=[221bf97c019382ab20124c87a042d634]
+entity lbsvc--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="39.0178" x="394.9467" y="493.2464"/><image height="28.613" width="30.3472" x="399.282" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADhElEQVR4Xt2asY7bMAyG72n9CnmFe4W+wnXtVqBrFw+dC9xQFB0KtEGHouhQQCXMsyyTlERSlqML8SMIHMnSF4m/pMQP4e7igV54/dEd6f3nX9PbZ9Tjh2/XP/9oiaOjI1IKk+ry7sv89TctfVx0QXr69IOTnAZ2JBJMqjcfv/PelwWDSW/UFscgAQzkCe+uXjCw9KbeaEV6/vkXphDvok8wyO3+4UeCTDgQJlWjMXqQAIb343ABGEwB2rYibEg5X+4nhzGqkHxWdqBMYBWkdis7VhrHLyENBZOqnGNZpGF5UAVLlJGgAr9LVTDjoaJVPsuB3KadXkNG8tk0INEbKcLXFojeaA0ZyedvJyNdM3NPRuL1NToZKWcSrxgpl04CEtDz+hqdjDRl0klA0hzgRI2LxGsqVTDxsCwMonwmjhLT6UiknOL2jH/UKPHgSJHciVRQPyRxqlOklmmQUz+kSUonitTjoNoVCRM1DYrE67SrKxI/buyQrq7dalVdkXg67ZD0iQQ3gsLQV43i3OAf5WRaG1OEQJD0ZyQ+3IcHbzQnkk47JF46J0TCr7MqLAwN849EYWf0RjXvf5bYkEyJhL1UTlQYfNP9sT96JLx/jA1ptuy1hkKKVTA2JNOxbzSkNJ02JF6uoNGQ0nS6E6T0OPiCpNmtQhtRESm9mCuM7eF/HGJhUh67VCgsaiVakZ5qS1tsqRBp23zrRSJN3eoqp7GuWPgFiZcgGh8pHgfvByk6xP0g0VGqetf4SLHwZuLlPevgSOnvKrtta8EuR0Yi1XdIhdXwsvwPVxZphhdIlU4KwOMFUhXWGP6b6w4p6NbccSTOHYoUFFYxjmjXlxCQgnFXfivl0lVGCkWrGEFz/g/2LFJQrL+3UjzMi1FCKhjgDUWO5TxKSKG2IJwv0eJIVJCC4txBBNYCKwEIv470UbB5eZIKHw4COayVdk6KOlKo7ZV4q/gG2KAi9Bu/lMfl+a1pcSqEJAtuVTmLI6FCChYDhI7CCAAGVsExmZb9BF70pWjB4khokYLFAKHf0Pvr+vwRDgu++pDKFkfCgKTZK12WnyXwfZxy8IpbNbweUeGKZk2vWhwJA1LQ7ZUAINoDzj0cmdh7kz1oLI6EDSnYDbBRSktIw4wUjAbYovRgpw8PUrAYoFvVc2EunEgO1zLJZHEknEgYPfIKxt8332I0IY0Zd4j0H/5OqJlk3lKMAAAAAElFTkSuQmCC" y="497.5817"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="415.3226" y="532.0627"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="22.9771" x="402.967" y="540.0491">mu-lb</text><!--MD5=[39c3a9154fea41356ad7913ba4b7b49a]
+entity runnersvc--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="84.5385" x="627.7528" y="493.2464"/><image height="28.613" width="30.3472" x="654.8484" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADhElEQVR4Xt2asY7bMAyG72n9CnmFe4W+wnXtVqBrFw+dC9xQFB0KtEGHouhQQCXMsyyTlERSlqML8SMIHMnSF4m/pMQP4e7igV54/dEd6f3nX9PbZ9Tjh2/XP/9oiaOjI1IKk+ry7sv89TctfVx0QXr69IOTnAZ2JBJMqjcfv/PelwWDSW/UFscgAQzkCe+uXjCw9KbeaEV6/vkXphDvok8wyO3+4UeCTDgQJlWjMXqQAIb343ABGEwB2rYibEg5X+4nhzGqkHxWdqBMYBWkdis7VhrHLyENBZOqnGNZpGF5UAVLlJGgAr9LVTDjoaJVPsuB3KadXkNG8tk0INEbKcLXFojeaA0ZyedvJyNdM3NPRuL1NToZKWcSrxgpl04CEtDz+hqdjDRl0klA0hzgRI2LxGsqVTDxsCwMonwmjhLT6UiknOL2jH/UKPHgSJHciVRQPyRxqlOklmmQUz+kSUonitTjoNoVCRM1DYrE67SrKxI/buyQrq7dalVdkXg67ZD0iQQ3gsLQV43i3OAf5WRaG1OEQJD0ZyQ+3IcHbzQnkk47JF46J0TCr7MqLAwN849EYWf0RjXvf5bYkEyJhL1UTlQYfNP9sT96JLx/jA1ptuy1hkKKVTA2JNOxbzSkNJ02JF6uoNGQ0nS6E6T0OPiCpNmtQhtRESm9mCuM7eF/HGJhUh67VCgsaiVakZ5qS1tsqRBp23zrRSJN3eoqp7GuWPgFiZcgGh8pHgfvByk6xP0g0VGqetf4SLHwZuLlPevgSOnvKrtta8EuR0Yi1XdIhdXwsvwPVxZphhdIlU4KwOMFUhXWGP6b6w4p6NbccSTOHYoUFFYxjmjXlxCQgnFXfivl0lVGCkWrGEFz/g/2LFJQrL+3UjzMi1FCKhjgDUWO5TxKSKG2IJwv0eJIVJCC4txBBNYCKwEIv470UbB5eZIKHw4COayVdk6KOlKo7ZV4q/gG2KAi9Bu/lMfl+a1pcSqEJAtuVTmLI6FCChYDhI7CCAAGVsExmZb9BF70pWjB4khokYLFAKHf0Pvr+vwRDgu++pDKFkfCgKTZK12WnyXwfZxy8IpbNbweUeGKZk2vWhwJA1LQ7ZUAINoDzj0cmdh7kz1oLI6EDSnYDbBRSktIw4wUjAbYovRgpw8PUrAYoFvVc2EunEgO1zLJZHEknEgYPfIKxt8332I0IY0Zd4j0H/5OqJlk3lKMAAAAAElFTkSuQmCC" y="497.5817"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="670.8891" y="532.0627"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="75.8679" x="632.0881" y="540.0491">mu-runner-headless</text><!--MD5=[c7cb435eb25f146380f1385da9d4b79d]
+entity asyncsvc--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="45.0872" x="152.1693" y="379.6613"/><image height="28.613" width="30.3472" x="159.5394" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADhElEQVR4Xt2asY7bMAyG72n9CnmFe4W+wnXtVqBrFw+dC9xQFB0KtEGHouhQQCXMsyyTlERSlqML8SMIHMnSF4m/pMQP4e7igV54/dEd6f3nX9PbZ9Tjh2/XP/9oiaOjI1IKk+ry7sv89TctfVx0QXr69IOTnAZ2JBJMqjcfv/PelwWDSW/UFscgAQzkCe+uXjCw9KbeaEV6/vkXphDvok8wyO3+4UeCTDgQJlWjMXqQAIb343ABGEwB2rYibEg5X+4nhzGqkHxWdqBMYBWkdis7VhrHLyENBZOqnGNZpGF5UAVLlJGgAr9LVTDjoaJVPsuB3KadXkNG8tk0INEbKcLXFojeaA0ZyedvJyNdM3NPRuL1NToZKWcSrxgpl04CEtDz+hqdjDRl0klA0hzgRI2LxGsqVTDxsCwMonwmjhLT6UiknOL2jH/UKPHgSJHciVRQPyRxqlOklmmQUz+kSUonitTjoNoVCRM1DYrE67SrKxI/buyQrq7dalVdkXg67ZD0iQQ3gsLQV43i3OAf5WRaG1OEQJD0ZyQ+3IcHbzQnkk47JF46J0TCr7MqLAwN849EYWf0RjXvf5bYkEyJhL1UTlQYfNP9sT96JLx/jA1ptuy1hkKKVTA2JNOxbzSkNJ02JF6uoNGQ0nS6E6T0OPiCpNmtQhtRESm9mCuM7eF/HGJhUh67VCgsaiVakZ5qS1tsqRBp23zrRSJN3eoqp7GuWPgFiZcgGh8pHgfvByk6xP0g0VGqetf4SLHwZuLlPevgSOnvKrtta8EuR0Yi1XdIhdXwsvwPVxZphhdIlU4KwOMFUhXWGP6b6w4p6NbccSTOHYoUFFYxjmjXlxCQgnFXfivl0lVGCkWrGEFz/g/2LFJQrL+3UjzMi1FCKhjgDUWO5TxKSKG2IJwv0eJIVJCC4txBBNYCKwEIv470UbB5eZIKHw4COayVdk6KOlKo7ZV4q/gG2KAi9Bu/lMfl+a1pcSqEJAtuVTmLI6FCChYDhI7CCAAGVsExmZb9BF70pWjB4khokYLFAKHf0Pvr+vwRDgu++pDKFkfCgKTZK12WnyXwfZxy8IpbNbweUeGKZk2vWhwJA1LQ7ZUAINoDzj0cmdh7kz1oLI6EDSnYDbBRSktIw4wUjAbYovRgpw8PUrAYoFvVc2EunEgO1zLJZHEknEgYPfIKxt8332I0IY0Zd4j0H/5OqJlk3lKMAAAAAElFTkSuQmCC" y="383.9966"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="175.58" y="418.4776"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="36.4166" x="156.5047" y="426.464">mu-async</text><!--MD5=[424d2c8856de44c92b02e86d262f7164]
+entity stepsvc--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="39.8848" x="394.5131" y="436.4539"/><image height="28.613" width="30.3472" x="399.282" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADhElEQVR4Xt2asY7bMAyG72n9CnmFe4W+wnXtVqBrFw+dC9xQFB0KtEGHouhQQCXMsyyTlERSlqML8SMIHMnSF4m/pMQP4e7igV54/dEd6f3nX9PbZ9Tjh2/XP/9oiaOjI1IKk+ry7sv89TctfVx0QXr69IOTnAZ2JBJMqjcfv/PelwWDSW/UFscgAQzkCe+uXjCw9KbeaEV6/vkXphDvok8wyO3+4UeCTDgQJlWjMXqQAIb343ABGEwB2rYibEg5X+4nhzGqkHxWdqBMYBWkdis7VhrHLyENBZOqnGNZpGF5UAVLlJGgAr9LVTDjoaJVPsuB3KadXkNG8tk0INEbKcLXFojeaA0ZyedvJyNdM3NPRuL1NToZKWcSrxgpl04CEtDz+hqdjDRl0klA0hzgRI2LxGsqVTDxsCwMonwmjhLT6UiknOL2jH/UKPHgSJHciVRQPyRxqlOklmmQUz+kSUonitTjoNoVCRM1DYrE67SrKxI/buyQrq7dalVdkXg67ZD0iQQ3gsLQV43i3OAf5WRaG1OEQJD0ZyQ+3IcHbzQnkk47JF46J0TCr7MqLAwN849EYWf0RjXvf5bYkEyJhL1UTlQYfNP9sT96JLx/jA1ptuy1hkKKVTA2JNOxbzSkNJ02JF6uoNGQ0nS6E6T0OPiCpNmtQhtRESm9mCuM7eF/HGJhUh67VCgsaiVakZ5qS1tsqRBp23zrRSJN3eoqp7GuWPgFiZcgGh8pHgfvByk6xP0g0VGqetf4SLHwZuLlPevgSOnvKrtta8EuR0Yi1XdIhdXwsvwPVxZphhdIlU4KwOMFUhXWGP6b6w4p6NbccSTOHYoUFFYxjmjXlxCQgnFXfivl0lVGCkWrGEFz/g/2LFJQrL+3UjzMi1FCKhjgDUWO5TxKSKG2IJwv0eJIVJCC4txBBNYCKwEIv470UbB5eZIKHw4COayVdk6KOlKo7ZV4q/gG2KAi9Bu/lMfl+a1pcSqEJAtuVTmLI6FCChYDhI7CCAAGVsExmZb9BF70pWjB4khokYLFAKHf0Pvr+vwRDgu++pDKFkfCgKTZK12WnyXwfZxy8IpbNbweUeGKZk2vWhwJA1LQ7ZUAINoDzj0cmdh7kz1oLI6EDSnYDbBRSktIw4wUjAbYovRgpw8PUrAYoFvVc2EunEgO1zLJZHEknEgYPfIKxt8332I0IY0Zd4j0H/5OqJlk3lKMAAAAAElFTkSuQmCC" y="440.7892"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="415.3226" y="475.2701"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="31.2142" x="398.8484" y="483.2566">mu-step</text><!--MD5=[67be8a3f22ddaa74f4eac7851649a558]
+entity natssvc--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="39.8848" x="311.492" y="379.6613"/><image height="28.613" width="30.3472" x="316.2608" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADhElEQVR4Xt2asY7bMAyG72n9CnmFe4W+wnXtVqBrFw+dC9xQFB0KtEGHouhQQCXMsyyTlERSlqML8SMIHMnSF4m/pMQP4e7igV54/dEd6f3nX9PbZ9Tjh2/XP/9oiaOjI1IKk+ry7sv89TctfVx0QXr69IOTnAZ2JBJMqjcfv/PelwWDSW/UFscgAQzkCe+uXjCw9KbeaEV6/vkXphDvok8wyO3+4UeCTDgQJlWjMXqQAIb343ABGEwB2rYibEg5X+4nhzGqkHxWdqBMYBWkdis7VhrHLyENBZOqnGNZpGF5UAVLlJGgAr9LVTDjoaJVPsuB3KadXkNG8tk0INEbKcLXFojeaA0ZyedvJyNdM3NPRuL1NToZKWcSrxgpl04CEtDz+hqdjDRl0klA0hzgRI2LxGsqVTDxsCwMonwmjhLT6UiknOL2jH/UKPHgSJHciVRQPyRxqlOklmmQUz+kSUonitTjoNoVCRM1DYrE67SrKxI/buyQrq7dalVdkXg67ZD0iQQ3gsLQV43i3OAf5WRaG1OEQJD0ZyQ+3IcHbzQnkk47JF46J0TCr7MqLAwN849EYWf0RjXvf5bYkEyJhL1UTlQYfNP9sT96JLx/jA1ptuy1hkKKVTA2JNOxbzSkNJ02JF6uoNGQ0nS6E6T0OPiCpNmtQhtRESm9mCuM7eF/HGJhUh67VCgsaiVakZ5qS1tsqRBp23zrRSJN3eoqp7GuWPgFiZcgGh8pHgfvByk6xP0g0VGqetf4SLHwZuLlPevgSOnvKrtta8EuR0Yi1XdIhdXwsvwPVxZphhdIlU4KwOMFUhXWGP6b6w4p6NbccSTOHYoUFFYxjmjXlxCQgnFXfivl0lVGCkWrGEFz/g/2LFJQrL+3UjzMi1FCKhjgDUWO5TxKSKG2IJwv0eJIVJCC4txBBNYCKwEIv470UbB5eZIKHw4COayVdk6KOlKo7ZV4q/gG2KAi9Bu/lMfl+a1pcSqEJAtuVTmLI6FCChYDhI7CCAAGVsExmZb9BF70pWjB4khokYLFAKHf0Pvr+vwRDgu++pDKFkfCgKTZK12WnyXwfZxy8IpbNbweUeGKZk2vWhwJA1LQ7ZUAINoDzj0cmdh7kz1oLI6EDSnYDbBRSktIw4wUjAbYovRgpw8PUrAYoFvVc2EunEgO1zLJZHEknEgYPfIKxt8332I0IY0Zd4j0H/5OqJlk3lKMAAAAAElFTkSuQmCC" y="383.9966"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="332.3014" y="418.4776"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="31.2142" x="315.8273" y="426.464">mu-nats</text><!--MD5=[89749fc873b8c2dd1d6b8e786eeffcf3]
+entity lbpod--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="39.0178" x="466.9128" y="493.2464"/><image height="28.613" width="30.3472" x="471.2481" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="497.5817"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="487.2887" y="532.0627"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="22.9771" x="474.9331" y="540.0491">mu-lb</text><!--MD5=[dc2316a4fbca463aac41adc7959a8376]
+entity runnerpod--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="48.989" x="645.5275" y="436.4539"/><image height="28.613" width="30.3472" x="654.8484" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="440.7892"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="670.8891" y="475.2701"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="40.3184" x="649.8628" y="483.2566">mu-runner</text><!--MD5=[2dfd2a7ffb5be6778e07341a286a6528]
+entity asyncpod--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="45.0872" x="212.8637" y="379.6613"/><image height="28.613" width="30.3472" x="220.2337" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="383.9966"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="236.2743" y="418.4776"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="36.4166" x="217.199" y="426.464">mu-async</text><!--MD5=[f884ea43ce35ba45638ccc81fb72e61f]
+entity steppod--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="39.8848" x="466.4793" y="436.4539"/><image height="28.613" width="30.3472" x="471.2481" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="440.7892"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="487.2887" y="475.2701"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="31.2142" x="470.8146" y="483.2566">mu-step</text><!--MD5=[cb11cb1f4d15ed8c8220c3eaacd1b94a]
+entity natspod--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="39.8848" x="394.5131" y="379.6613"/><image height="28.613" width="30.3472" x="399.282" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="383.9966"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="415.3226" y="418.4776"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="31.2142" x="398.8484" y="426.464">mu-nats</text><!--MD5=[afbca4961f61f156d945f3a30a143588]
+entity natsprocessorpod--><rect fill="#FFFFFF" height="52.6012" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="79.3362" x="291.7663" y="444.2574"/><image height="28.613" width="30.3472" x="316.2608" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABCCAIAAABl3TfFAAADoklEQVR4Xt2aPW4bMRCFfVpewVfQFXyFpE1nIG0aF6kDqAiCFAESI0UQpAjAPOxIFHeGPzP8kRg9vEKWd0l+JGd26PWDvzs98C/+f01Hev700709kg/vv77+/suvGK2JSDFM7Md3n1++/OJXj9MUpDcfv0uSq4GNRMKmevrwTY6+bCwmb6hPY5AAgziRw9UbC8sbbVUv0vHHH2whOcQ2Y5H780c7EiJhIEzszsTYggQYOY7hBhi2AO9bIRtSLi/Pc0NiVCG1pbKBNoFVkPpT2VhrMn4JaSmY2OUYyyIty0MupMQ0Em6QrSxlxDYf9FlppOuk6U7zQZ+VRrptflM6t/fSSPL+ZmN2kKbQPVYehdzAgiOXJKYgYdwYfe5JQnj9GyEXTgkk0Mv7NQ4LwlvMC30Bvjm78uY2JZA0B7jg8oLoFZbOtDN5K5sSSPLOgjHB1pXJqSHYkuHUhYTuw57BZ8yxdbkwF5iREFdxgxonD44cyRRI6D7cFU8wvsePySkksQWJrzcNAC3wpiWS6fgQkIJo1pNLh7HmfhXLhORS4cSRTFtZIsVKhnt1Aa1IMow5kryn4DJSEJVXB93x24okjxs7JGu1qkSiZnNPRiYrkgynHZIpkNwaSE6E0w7JlEDdMkhsP++Q5NVlL4LE0uYFyRpIbhkkNowLUsOxbxEktw+nC1JDtb8OUhxOFyR5XdXrIMXhdCdIceMnpLaG1kFyUTidkEzHvtjJ8p5JjwQe67MxODRyQpJXmFwG0yD1wJBDKTwGyW21lqwgSWWk10HvEEKGGIZEfky9YiggNW94ab5K1oK17MP+bVcSaWyPTsaSt9esVT+dX7wypJcJb0TjGdyVrcN7chsJlVr0YUYXLIZ3SA2V680tQ3SH5DuedDexPNJ6ieQnBO4886FvSiD5pqr8+o6r71hpJD8nVQy0fPoFZZH8uOfvcJfrrxLSFRLg0f4vSNXyv4Tkm07vJmPWTEjJFMdUQfLGMgwX0+um4/aHf/qSfoQp61AdCNNbHBMSH1xKdSRvqZUwSnqy0XRSeU5PBXwmgPANbSE9Ui7FMamQvLpjjDUsDh2B4oMQLVRYLmfZeIUUx6RF8roEOAmpnOKYDEiaWmnGxqumOCYDklfUSriAQr+aHo7bG7RqbU5TY5INydcSYLzxhliZEmKZkXwxAY5FOuZfFhbUguQVAdDv58wfZ6pqRJpdK5lSHFMjEmngHgvG+rftt6AupDV1h0j/AKDFwhlX8rLCAAAAAElFTkSuQmCC" y="448.5927"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="332.3014" y="483.0737"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="70.6655" x="296.1016" y="491.0601">mu-nats-processor</text><!--MD5=[bda87a51f6b9a8b1ff0d591f8a37babf]
+entity clientapps--><rect fill="#FEFECE" filter="url(#f1ia1jfaygr1s)" height="14.0847" style="stroke:#A80036;stroke-width:0.6502963590177815;" width="41.1854" x="4.7688" y="307.4784"/><rect fill="#FEFECE" height="14.0847" style="stroke:#A80036;stroke-width:0.6502963590177815;" width="41.1854" x="3.0347" y="305.7443"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="34.2489" x="6.503" y="315.0804">Client Apps</text><!--MD5=[0486c4e0b9bf3c24080c5a45b8dda973]
+entity helmchart--><rect fill="#FEFECE" filter="url(#f1ia1jfaygr1s)" height="14.0847" style="stroke:#A80036;stroke-width:0.6502963590177815;" width="43.3531" x="874.6486" y="18.7468"/><rect fill="#FEFECE" height="14.0847" style="stroke:#A80036;stroke-width:0.6502963590177815;" width="43.3531" x="872.9145" y="17.0127"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="36.4166" x="876.3827" y="26.3489">Helm Charts</text><!--MD5=[32489dd30da16d71aac9b80c732c22d6]
+entity devopsactor--><ellipse cx="24.4945" cy="11.3768" fill="#FEFECE" filter="url(#f1ia1jfaygr1s)" rx="3.4682" ry="3.4682" style="stroke:#A80036;stroke-width:0.6502963590177815;"/><path d="M24.4945,14.845 L24.4945,26.5504 M18.8586,18.3133 L30.1304,18.3133 M24.4945,26.5504 L18.8586,33.0533 M24.4945,26.5504 L30.1304,33.0533 " fill="none" filter="url(#f1ia1jfaygr1s)" style="stroke:#A80036;stroke-width:0.6502963590177815;"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="22.5436" x="13.2227" y="41.3057">DevOps</text><!--MD5=[4aca4b6b7def68238fc1e6c37bf6a643]
+entity dockerregistry--><rect fill="#FFFFFF" height="50" style="stroke:#00000000;stroke-width:0.6502963590177815;" width="65.0296" x="752.6097" y="570.4149"/><image height="26.0119" width="30.3472" x="769.9509" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAA8CAIAAABU9Vt0AAAEiElEQVR4Xu2aPW4bMRCFdcm9gq6gK+gKKtM6bToDadO4SJsAKoIgRYDESBEEKQLIT3zWaDQz/NVKggMPXmFxl1x+5MyQ3PVid549fP199/HH+v235dstNL35xD9QsvnwHVdthcvbwha02eOff+gxGaoC3vbnX9vExawbCTDoou93Vat3X64D1od0//mX72uX4KW20bmtAwme5rs4IEyXbXpWa0Uac7acQAUHts+YyZqQ5uWhOFcAgzNj/vEIlEBMlSgcZq4jwft9h2ZRNWGCcGAZqCAhR/knXVm9YBUkNOefcRO1p8oSEsbGNz0sBowvbxeq2y5GVkKaa4rQFYl15oPhlluoskh4tm+xV4UdA9qHL1UzhFfVA7NIZyY69BWzYRuNDMy9bLlhomWRzvF7P5DoBGYM/S5sz1He+NDy/iOL1DVsIvTYLJGA8R1F48DODXYLW67uroDkWynLnyB4APF3amG8wRZuFBhsuUSClm2Fg8VIXbkhXAoRSF3zjEZysRcGG37a+w52LpJv2sP4FQm9zKVy3OkHiIZa+twZzu0uROo65Gkk5gB9VVYk44F6mQq9q5pIClctUu+OQSPpchNaOSTpVuhdbD8XbDk7QRo4tHokCS3mOl4KkcS9cZsEkvEuEYOthe2INMAzOSRhENflzzISZRJmjk3zh/aMtB09RBgkya1yA3+2I9H9dKgU2MJwekbyAdqoSyBJidmFhEsw+fUM75F6U4LWFZCYSPVuI8fGRLJHGp6i6VpIUiKxSkNQebbFcBRRt0JikpB29Pq+0E0M6FZIUiK7cpmuhZ+4Lt0caTo84ojkk2OXqki5UMadxkFeDFK7uIDOgKSvDShE8vHJDHufXqwWEuzy8JGKGkSad5Z8a+FpanfYp67TtzbfrNTlQEhJE1JhzFpkkLTMol4w5IkH9TXRP0Uk+U0XsuSIZHJRrzwSfUwKxTDYKEfXme4KxnWm4KIm37DWEWlsAy7SSOtoH7lNm05fC93dpC8U1ZncpiPwJtq5UhypI9LOOUyXNJI2s6JXJYR+UIxVg3CP5EexXR7pIZ2i/Z1dWqZv8lVHlSDULrpHMqt4lzTSXXTSltv0T8yGREuuiqneQkgXfT4v+ZWkUT49aEl0hRsibegN7mzkLIfi8aCeSy9leaRl9HInRHpMr4cYPx4SJRx1Rk65e5rwiIQmymMTyiDJUsj0IMtIDkkXcrzv0xGIqCGnTGYuQ5y8IUKF8mB4GaSN2+PxZzuSDgGubyjXnsYGNS2dVnpu3+PtOr9ZXAdJSsQL+JNpgyUn65K39iXltkgUSypINAaDruz1wpBojEi0jm6Fkjunl4LUbtMr0itSCWmrvgP9D0hGMyOtDv/oIA/gpbmQuObqWvrSOm075kSSpUw/lZfGkNbpH9lyDJPa2rFB2pxIj9EndF5qQeKJowAwnZ4yTp6tbE4kmo7U6fCGKETSHlUQt/bhOSK0+ZFowChsqVa1E1F1Kgp2KSRa115xnT5GNE5FwS6LRNMRr7VKbx7D8985dg2kXcoE63Ri64qKMXsCQ7TS9xYfSvoAAAAASUVORK5CYII=" y="574.7502"/><text fill="#000000" font-family="sans-serif" font-size="6.0694" lengthAdjust="spacing" textLength="0" x="785.9915" y="606.63"/><text fill="#000000" font-family="sans-serif" font-size="6.9365" font-weight="bold" lengthAdjust="spacing" textLength="56.359" x="756.945" y="614.6164">Docker Registry</text><!--MD5=[fc8cb5b94d179219e976b8b15aee8330]
+link apisvc to apipod--><path d="M689.5743,313.5478 C709.9199,313.5478 742.0402,313.5478 763.2355,313.5478 " fill="none" id="apisvc-to-apipod" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="765.5072,313.5478,761.6054,311.8137,763.3395,313.5478,761.6054,315.282,765.5072,313.5478" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="7.8036" x="726.5978" y="312.0601">80</text><!--MD5=[1c9e94d1047cd67f489fa94977b11e9c]
+link apipod to mysqlpod--><path d="M804.7504,313.5478 C823.9992,313.5478 853.579,313.5478 873.5865,313.5478 " fill="none" id="apipod-to-mysqlpod" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="875.8538,313.5478,871.952,311.8137,873.6862,313.5478,871.952,315.282,875.8538,313.5478" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="15.6071" x="837.5817" y="312.0601">3306</text><!--MD5=[626aafee0ead93ba68ddaa44330725fb]
+link uisvc to uipod--><path d="M506.065,133.225 C540.4526,127.8405 612.2757,116.5948 648.1851,110.9719 " fill="none" id="uisvc-to-uipod" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="650.5001,110.6077,646.3776,109.496,648.3584,110.9419,646.9124,112.9227,650.5001,110.6077" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="15.6071" x="562.2896" y="113.9365">4000</text><!--MD5=[91a5a407484ad8e0aa50e120bd35018c]
+link grafanasvc to grafanapod--><path d="M512.4552,221.2058 C546.4787,221.2058 606.3883,221.2058 641.5824,221.2058 " fill="none" id="grafanasvc-to-grafanapod" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="643.8671,221.2058,639.9653,219.4716,641.6994,221.2058,639.9653,222.9399,643.8671,221.2058" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="7.8036" x="566.1914" y="219.718">80</text><!--MD5=[d4316137228bfc7328de224501ba4075]
+link prometheussvc to prometheuspod--><path d="M831.9805,221.2058 C841.167,221.2058 850.6743,221.2058 859.4317,221.2058 " fill="none" id="prometheussvc-to-prometheuspod" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="861.6427,221.2058,857.7409,219.4716,859.475,221.2058,857.7409,222.9399,861.6427,221.2058" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="0" x="846.2523" y="219.718"/><!--MD5=[4e17404d15fd005a4bb40da1817848f5]
+link lokisvc to lokihlsvc--><path d="M804.7504,164.4132 C819.0092,164.4132 838.943,164.4132 856.449,164.4132 " fill="none" id="lokisvc-to-lokihlsvc" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="858.79,164.4132,854.8883,162.6791,856.6224,164.4132,854.8883,166.1473,858.79,164.4132" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="19.0754" x="835.8476" y="162.9255">listens</text><!--MD5=[4524f520b1b21f145dfc895fc47cb05c]
+link lokisvc to lokipod--><path d="M804.655,156.2195 C818.8445,149.9593 838.5702,140.9072 855.3565,131.8984 C861.4909,128.6036 867.9982,124.7755 873.9246,121.1425 " fill="none" id="lokisvc-to-lokipod" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="875.9102,119.9199,871.6778,120.484,874.063,121.0543,873.4927,123.4395,875.9102,119.9199" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="0" x="846.2523" y="130.4107"/><!--MD5=[b14086aa075627e8a8a89aa374ac8909]
+link grafanapod to prometheussvc--><path d="M696.0902,221.2058 C707.8953,221.2058 722.3015,221.2058 736.0444,221.2058 " fill="none" id="grafanapod-to-prometheussvc" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="738.2424,221.2058,734.3407,219.4716,736.0748,221.2058,734.3407,222.9399,738.2424,221.2058" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="0" x="731.3666" y="219.718"/><!--MD5=[93f553599bc7ef577bfcd4c43229fb0d]
+link vectorpod to lokisvc--><path d="M693.2419,166.3468 C705.5542,167.1748 721.0226,167.8685 734.8349,167.4479 C744.1818,167.1618 754.5042,166.5809 763.3179,165.9999 " fill="none" id="vectorpod-to-lokisvc" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="765.5245,165.8525,761.5172,164.3787,763.3616,165.9951,761.7452,167.8395,765.5245,165.8525" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="0" x="731.3666" y="165.9602"/><!--MD5=[5d3d911599e6465486e0fe3804d0b755]
+link grafanapod to lokisvc--><path d="M696.0902,208.4599 C716.4012,198.363 744.4376,184.425 763.4913,174.9523 " fill="none" id="grafanapod-to-lokisvc" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="765.5375,173.9335,761.2712,174.1056,763.5938,174.893,762.8064,177.2156,765.5375,173.9335" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="0" x="731.3666" y="188.0703"/><!--MD5=[4e79748190c90a4bc071e586c2f452cf]
+link vectorpod to kubernetesapi--><path d="M693.2419,152.6038 C735.5545,130.9186 825.044,86.3083 858.8247,79.0076 C889.1155,72.4613 924.522,74.2171 949.7665,77.022 " fill="none" id="vectorpod-to-kubernetesapi" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="952.0252,77.2778,948.3415,75.1188,949.8711,77.0357,947.9542,78.5653,952.0252,77.2778" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="16.0406" x="837.3649" y="78.8205">listen</text><!--MD5=[49ecd0329b90c8a105014a90d8e7c8cd]
+link lbsvc to lbpod--><path d="M434.1292,519.475 C443.5715,519.475 454.9777,519.475 464.6844,519.475 " fill="none" id="lbsvc-to-lbpod" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="466.8564,519.475,462.9546,517.7409,464.6888,519.475,462.9546,521.2091,466.8564,519.475" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="7.8036" x="438.2997" y="517.9873">90</text><!--MD5=[ae1e4b9c7880e87d4980c3312a8a208e]
+link asyncsvc to asyncpod--><path d="M197.3129,408.6819 C198.4661,408.7772 199.6106,408.8596 200.7248,408.9246 C203.8722,409.1111 207.1801,409.0894 210.4446,408.942 " fill="none" id="asyncsvc-to-asyncpod" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="212.6946,408.8206,208.7002,407.3119,210.5305,408.9443,208.8981,410.7745,212.6946,408.8206" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="7.8036" x="201.1583" y="407.4369">80</text><!--MD5=[6a355ebd25c5a90647baef79c6d6b6ff]
+link stepsvc to steppod--><path d="M434.4283,465.4397 C435.5902,465.5481 436.7434,465.6435 437.8662,465.7172 C446.4545,466.2808 455.9098,465.9036 464.1469,465.249 " fill="none" id="stepsvc-to-steppod" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="466.4359,465.0582,462.4039,463.6532,464.2757,465.2377,462.6911,467.1095,466.4359,465.0582" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="7.8036" x="438.2997" y="464.2295">80</text><!--MD5=[0fe6a49814659eab921cf4fe14aabe30]
+link natssvc to natspod--><path d="M351.4678,408.0446 C362.9954,409.0244 377.8525,409.7917 391.0449,408.9246 C391.4654,408.8986 391.8903,408.8683 392.3195,408.8336 " fill="none" id="natssvc-to-natspod" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="394.4828,408.6472,390.4468,407.2536,392.3231,408.8328,390.7439,410.7091,394.4828,408.6472" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="15.6071" x="375.0042" y="407.4369">6222</text><!--MD5=[36e18cbe11caebc50badf81a4a82cabe]
+link lbpod to runnerpod--><path d="M505.9826,509.0833 C509.2427,507.5139 512.633,505.9965 515.9018,504.735 C559.3763,487.9573 612.1847,475.0511 643.2168,468.184 " fill="none" id="lbpod-to-runnerpod" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="645.4105,467.7028,641.2254,466.8563,643.2944,468.173,641.9778,470.242,645.4105,467.7028" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="61.9949" x="539.0957" y="472.033">FN_GRPC_PORT:9191</text><!--MD5=[bfb1e9aef38561ab3f00b26e20d3fb49]
+link lbpod to runnersvc--><path d="M506.065,519.475 C534.1881,519.475 587.3433,519.475 625.4247,519.475 " fill="none" id="lbpod-to-runnersvc" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="627.6791,519.475,623.7773,517.7409,625.5114,519.475,623.7773,521.2091,627.6791,519.475" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="19.0754" x="559.6884" y="511.4843">listens</text><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="107.5157" x="516.3353" y="518.1219">FN_RUNNER_K8S_HEADLESS_SERVICE</text><!--MD5=[62a46f11f8985a3a753e9a48c9c7cac7]
+link lbpod to apisvc--><path d="M505.9306,501.2234 C508.4667,497.9936 510.7601,494.4906 512.4335,490.862 C517.2371,480.4442 509.6459,474.8994 515.9018,465.2837 C546.7518,417.8597 593.144,445.7531 624.2845,398.5199 C630.0721,389.7366 623.929,384.907 627.7528,375.1092 C632.8597,362.0209 641.1705,348.95 649.0478,338.2374 " fill="none" id="lbpod-to-apisvc" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="650.4091,336.4036,646.6891,338.4994,649.1154,338.1429,649.472,340.5693,650.4091,336.4036" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="61.9949" x="539.0957" y="397.0322">FN_RUNNER_API_URL</text><!--MD5=[4327b0e3093846b27ffb4dc50656c5e7]
+link natsprocessorpod to natssvc--><path d="M331.4344,444.2141 C331.4344,440.9756 331.4344,437.6591 331.4344,434.3902 " fill="none" id="natsprocessorpod-to-natssvc" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="331.4344,432.1402,329.7003,436.042,331.4344,434.3079,333.1685,436.042,331.4344,432.1402" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="6.0694" font-weight="bold" lengthAdjust="spacing" textLength="4.7688" x="323.8476" y="440.5876">=</text><!--MD5=[cf0b1ca9579267d9a01e831005255e02]
+link natsprocessorpod to stepsvc--><path d="M371.1415,466.7577 C378.4031,466.064 385.7428,465.3704 392.2501,464.7504 " fill="none" id="natsprocessorpod-to-stepsvc" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="394.4221,464.5423,390.374,463.1843,392.2641,464.747,390.7014,466.637,394.4221,464.5423" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="6.0694" font-weight="bold" lengthAdjust="spacing" textLength="4.7688" x="380.4234" y="463.7815">=</text><!--MD5=[c7e7b7517608d54b471f17181879f20d]
+link natsprocessorpod to lbsvc--><path d="M371.1718,492.8952 C377.8352,496.7927 384.659,500.8419 391.0449,504.735 C391.6735,505.1165 392.3065,505.5067 392.9481,505.9012 " fill="none" id="natsprocessorpod-to-lbsvc" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="394.8816,507.102,392.4781,503.573,393.0389,505.9605,390.6515,506.5213,394.8816,507.102" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="6.0694" font-weight="bold" lengthAdjust="spacing" textLength="4.7688" x="380.4234" y="493.6952">=</text><!--MD5=[60eddff186322ed45550df491d2445ce]
+link asyncpod to natssvc--><path d="M258.0072,408.6819 C259.1604,408.7772 260.305,408.8596 261.4191,408.9246 C277.4034,409.8697 295.4687,409.0244 309.1856,407.9882 " fill="none" id="asyncpod-to-natssvc" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="311.3489,407.8235,307.325,406.3955,309.1877,407.9907,307.5925,409.8534,311.3489,407.8235" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="0" x="275.7257" y="407.4369"/><!--MD5=[7bd8af05f2280f3948447e3964216238]
+reverse link apisvc to uipod--><path d="M648.3151,309.49 C623.7079,303.6026 584.7205,290.0765 567.0584,261.3074 C561.1407,251.67 541.7055,232.2044 627.7528,135.8002 C634.0953,128.6946 642.6099,122.5688 650.3354,117.8607 " fill="none" id="apisvc-backto-uipod" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="650.5045,310.0016,647.1019,307.4221,648.3941,309.5065,646.3097,310.7987,650.5045,310.0016" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="34.6825" x="552.7519" y="259.8196">FN_API_URL</text><!--MD5=[6c8d3083c5c82e371e2dccf32d751b68]
+link clientapps to ingress--><path d="M46.08,313.5478 C51.6682,313.5478 57.7593,313.5478 63.5686,313.5478 " fill="none" id="clientapps-to-ingress" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="65.8664,313.5478,61.9646,311.8137,63.6987,313.5478,61.9646,315.282,65.8664,313.5478" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="0" x="51.5902" y="312.0601"/><!--MD5=[d2e2e72b1b2e9e3d2c02cf70d559f638]
+link devopsactor to ingress--><path d="M28.8732,42.4436 C39.6811,90.765 69.8678,225.6841 83.1339,284.9782 " fill="none" id="devopsactor-to-ingress" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="83.6368,287.2282,84.4806,283.0426,83.1652,285.1124,81.0954,283.7971,83.6368,287.2282" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="0" x="51.5902" y="133.4454"/><!--MD5=[d74ef7e21c428a317df7fffd5db574c9]
+link devopsactor to kubernetesapi--><path d="M35.8443,20.7497 C48.5468,16.3884 70.258,10.0762 89.5241,10.0762 C89.5241,10.0762 89.5241,10.0762 895.8916,10.0762 C916.7141,10.0762 924.9122,3.699 942.4962,14.845 C956.6466,23.8148 966.5528,39.669 973.0298,53.7241 " fill="none" id="devopsactor-to-kubernetesapi" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="973.9619,55.7834,973.9371,51.5137,973.07,53.8077,970.776,52.9406,973.9619,55.7834" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="0" x="415.3226" y="8.5885"/><!--MD5=[55437917b3620f699863da13cc6d72ce]
+link devopsactor to helmchart--><path d="M35.788,24.8163 C48.6205,24.8163 70.6265,24.8163 89.5241,24.8163 C89.5241,24.8163 89.5241,24.8163 785.558,24.8163 C814.7736,24.8163 848.3723,24.8163 870.5561,24.8163 " fill="none" id="devopsactor-to-helmchart" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="872.8018,24.8163,868.9,23.0821,870.6341,24.8163,868.9,26.5504,872.8018,24.8163" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="0" x="383.6749" y="23.3285"/><!--MD5=[cfadcc65f6585f32d38823ec7b990756]
+link ingress to lbsvc--><path d="M95.7323,339.9715 C107.429,394.1022 137.2559,512.5385 174.2794,512.5385 C174.2794,512.5385 174.2794,512.5385 331.8679,512.5385 C352.5517,512.5385 376.062,514.7495 392.6186,516.6744 " fill="none" id="ingress-to-lbsvc" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="394.8036,516.9302,391.1315,514.7514,392.6508,516.6766,390.7257,518.1959,394.8036,516.9302" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="3.0347" x="233.8899" y="511.0508">/</text><!--MD5=[4833fc254c473ac6205134f381642d9f]
+link ingress to apisvc--><path d="M114.075,313.5478 C130.8786,313.5478 153.9642,313.5478 174.2794,313.5478 C174.2794,313.5478 174.2794,313.5478 486.8552,313.5478 C545.2171,313.5478 614.0618,313.5478 648.1851,313.5478 " fill="none" id="ingress-to-apisvc" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="650.3831,313.5478,646.4813,311.8137,648.2154,313.5478,646.4813,315.282,650.3831,313.5478" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="12.1389" x="325.3649" y="312.0601">/api</text><!--MD5=[830c583527abdce2f2ce0dc464fe67f1]
+link ingress to stepsvc--><path d="M114.101,329.1636 C130.3454,338.3718 152.7676,348.2303 174.2794,348.2303 C174.2794,348.2303 174.2794,348.2303 331.8679,348.2303 C367.0143,348.2303 377.2109,368.3765 391.0449,400.6876 C396.9149,414.4001 389.3845,420.062 394.5131,434.0694 C394.5478,434.1691 394.5868,434.2689 394.6215,434.3642 " fill="none" id="ingress-to-stepsvc" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="395.4582,436.4365,395.6034,432.1692,394.6457,434.4269,392.388,433.4692,395.4582,436.4365" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="15.6071" x="227.6037" y="346.7426">/step</text><!--MD5=[9b8bbe8317113618647dbda12190190a]
+link ingress to asyncsvc--><path d="M105.0836,339.8848 C108.8163,345.7245 113.0388,351.7116 117.4869,356.9009 C127.224,368.2551 139.6533,379.2798 150.4005,387.9894 " fill="none" id="ingress-to-asyncsvc" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="152.113,389.3681,150.1614,385.5704,150.4246,388.0086,147.9863,388.2718,152.113,389.3681" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="19.9424" x="117.9204" y="355.4132">/async</text><!--MD5=[2e43c9129a771c3224da294facfbb907]
+link ingress to uisvc--><path d="M96.5213,287.2802 C106.4058,252.4113 129.448,195.1939 174.2794,195.1939 C174.2794,195.1939 174.2794,195.1939 414.8891,195.1939 C435.9977,195.1939 454.2017,179.5998 466.8998,164.4522 " fill="none" id="ingress-to-uisvc" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="468.4215,162.6097,464.5997,164.5138,467.0411,164.281,467.2738,166.7224,468.4215,162.6097" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="8.6706" x="270.5233" y="193.7062">/ui</text><!--MD5=[b26043eed8139f153e3d3abc24e917eb]
+link ingress to grafanasvc--><path d="M114.0967,293.8482 C130.0723,282.5634 152.1954,270.6283 174.2794,270.6283 C174.2794,270.6283 174.2794,270.6283 414.8891,270.6283 C420.1305,270.6283 440.7492,255.9706 458.4416,242.6178 " fill="none" id="ingress-to-grafanasvc" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="460.3665,241.1655,456.2084,242.1359,458.6376,242.473,458.3005,244.9022,460.3665,241.1655" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="26.0119" x="261.8527" y="269.1406">/grafana</text><!--MD5=[d634ad0502f7b4fba321583f80da77b7]
+link helmchart to kubernetesapi--><path d="M910.8875,32.6632 C920.1737,37.6835 932.2432,44.5029 942.4962,51.2616 C945.0454,52.9394 947.6422,54.7256 950.2304,56.5594 " fill="none" id="helmchart-to-kubernetesapi" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="952.0209,57.8383,949.8489,54.1622,950.2553,56.5807,947.8368,56.9871,952.0209,57.8383" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="0" x="948.1321" y="53.2422"/><!--MD5=[e1343de59d13b933c7b22612bb76ed12]
+link prometheuspod to kubernetesapi--><path d="M929.3169,204.5798 C934.1854,201.1116 938.7982,197.1101 942.4962,192.5927 C962.0701,168.6748 972.6613,134.4476 978.0544,110.4343 " fill="none" id="prometheuspod-to-kubernetesapi" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="978.5269,108.2883,975.9877,111.721,978.0567,110.4043,979.3734,112.4733,978.5269,108.2883" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="0" x="948.1321" y="183.735"/><!--MD5=[5deef5f059e9a5eff8e46a58e1f99d6d]
+link runnerpod to dockerregistry--><path d="M694.5989,472.3199 C704.1149,476.937 714.667,483.1538 722.696,490.862 C745.7382,512.9807 763.2095,545.4912 773.6446,568.3556 " fill="none" id="runnerpod-to-dockerregistry" style="stroke:#666666;stroke-width:0.43353090601185434;"/><polygon fill="#666666" points="774.568,570.4019,774.5321,566.1323,773.671,568.4285,771.3747,567.5674,774.568,570.4019" style="stroke:#666666;stroke-width:0.43353090601185434;"/><text fill="#666666" font-family="sans-serif" font-size="5.6359" font-weight="bold" lengthAdjust="spacing" textLength="0" x="731.3666" y="494.1431"/><text fill="#888888" font-family="sans-serif" font-size="4.3353" lengthAdjust="spacing" textLength="42.486" x="488.1558" y="626.7739">Mu by Olivier Refalo</text><!--MD5=[0aec271f013dd1e5e1b4c1257480110e]
+@startuml leanmu
+
+footer Mu by Olivier Refalo
+scale max 1024 width
+
+skinparam nodesep 10
+skinparam ranksep 10
+
+' Kubernetes
+!define KubernetesPuml https://raw.githubusercontent.com/dcasati/kubernetes-PlantUML/master/dist
+!includeurl KubernetesPuml/kubernetes_Common.puml
+!includeurl KubernetesPuml/kubernetes_C4.puml
+!includeurl KubernetesPuml/kubernetes_Context.puml
+!includeurl KubernetesPuml/kubernetes_Simplified.puml
+
+!includeurl KubernetesPuml/OSS/KubernetesSvc.puml
+!includeurl KubernetesPuml/OSS/KubernetesIng.puml
+!includeurl KubernetesPuml/OSS/KubernetesPod.puml
+!includeurl KubernetesPuml/OSS/KubernetesDeploy.puml
+!includeurl KubernetesPuml/OSS/KubernetesApi.puml
+
+
+!define AzurePuml https://raw.githubusercontent.com/RicardoNiepel/Azure-PlantUML/release/2-1/dist
+!includeurl AzurePuml/AzureCommon.puml
+!includeurl AzurePuml/AzureSimplified.puml
+
+!includeurl AzurePuml/Containers/AzureContainerRegistry.puml
+
+collections "Client Apps" as clientapps
+collections "Helm Charts" as helmchart
+actor "DevOps" as devopsactor
+
+'top to bottom direction
+Left to right direction
+
+AzureContainerRegistry(dockerregistry, "Docker Registry", " ")
+
+' Kubernetes Components
+Cluster_Boundary(cluster, "Kubernetes Cluster") {
+ 
+    KubernetesIng(ingress, "fn.mu.local", "")
+    KubernetesApi(kubernetesapi, "Kubernetes API", "")
+
+    Namespace_Boundary(mgmtns, "mu-mgmt") {
+        KubernetesSvc(apisvc, "mu-api", "")
+        KubernetesPod(apipod, "mu-api", "")
+        KubernetesPod(mysqlpod, "mysql", "")
+
+        ' KubernetesDeploy(apideploy,"mu-api","")
+        ' KubernetesDeploy(mysqldeploy,"mu-mysql","")
+
+        Rel(apisvc,apipod, "80")
+
+        Rel(apipod,mysqlpod,"3306")
+
+        ' Rel(apideploy,apipod, "replica=1")
+        ' Rel(mysqldeploy,mysqlpod, "replica=1")
+    }
+
+    Namespace_Boundary(opsns, "mu-ops") {
+
+        KubernetesSvc(uisvc, "mu-ui", "")
+        KubernetesSvc(grafanasvc, "mu-grafana", "")
+        KubernetesSvc(prometheussvc, "mu-prometheus-server", "")
+        KubernetesSvc(lokisvc, "mu-loki", "")
+        KubernetesSvc(lokihlsvc, "mu-loki-headless", "")
+
+        KubernetesPod(uipod, "mu-ui", "")
+        KubernetesPod(grafanapod, "mu-grafana", "")
+        KubernetesPod(lokipod, "mu-loki", "")
+        KubernetesPod(vectorpod, "mu-vector", "")
+        KubernetesPod(prometheuspod, "mu-prometheus", "")
+
+        ' KubernetesDeploy(uideploy,"mu-ui","")
+        ' KubernetesDeploy(grafanadeploy,"mu-grafana","")
+        ' KubernetesDeploy(prometheusdeploy,"mu-prometheus-server","")
+
+        Rel(uisvc, uipod, "4000")
+        Rel(grafanasvc, grafanapod, "80")
+        Rel(prometheussvc, prometheuspod, " ")
+        Rel(lokisvc,lokihlsvc,"listens")
+        Rel(lokisvc,lokipod," ")
+        
+        Rel(grafanapod,prometheussvc," ")
+        Rel(vectorpod,lokisvc," ")
+        Rel(grafanapod,lokisvc," ")
+        Rel(vectorpod, kubernetesapi, "listen")
+
+        ' Rel(grafanadeploy, grafanapod," ")
+        ' Rel(uideploy,uipod, "replica=1") 
+        ' Rel(prometheusdeploy, prometheuspod," ")
+        ' Rel(prometheusdeploy, lokipod," ")
+
+    }
+
+    Namespace_Boundary(nsFn, "mu-fn") {
+        KubernetesSvc(lbsvc, "mu-lb", "")
+        KubernetesSvc(runnersvc, "mu-runner-headless", "")
+        KubernetesSvc(asyncsvc, "mu-async", "")
+        KubernetesSvc(stepsvc, "mu-step", "")
+        KubernetesSvc(natssvc, "mu-nats", "")
+
+        KubernetesPod(lbpod, "mu-lb", "")
+        KubernetesPod(runnerpod, "mu-runner", "")
+        KubernetesPod(asyncpod, "mu-async", "")
+        KubernetesPod(steppod, "mu-step", "")
+        KubernetesPod(natspod, "mu-nats", "")
+        KubernetesPod(natsprocessorpod, "mu-nats-processor", "")
+        
+        ' KubernetesDeploy(lbdeploy,"mu-lb","")
+        ' KubernetesDeploy(runnerdeploy,"mu-runner","")
+        ' KubernetesDeploy(asyncdeploy,"mu-async","")
+        ' KubernetesDeploy(stepdeploy,"mu-step","")
+        ' KubernetesDeploy(natsdeploy,"mu-nats","")
+
+        ' Rel(lbdeploy,lbpod, "replica=1")
+        ' Rel(runnerdeploy,runnerpod, "replica=1")
+        ' Rel(asyncdeploy,asyncpod, "replica=1")
+        ' Rel(stepdeploy,steppod, "replica=1")
+        ' Rel(natsdeploy,natspod, "replica=1")
+
+        Rel(lbsvc, lbpod, "90")
+        Rel(asyncsvc, asyncpod, "80")
+        Rel(stepsvc, steppod, "80")
+        Rel(natssvc, natspod, "6222")
+
+        Rel(lbpod, runnerpod, "FN_GRPC_PORT:9191")
+        Rel(lbpod, runnersvc, "listens FN_RUNNER_K8S_HEADLESS_SERVICE")
+        Rel(lbpod, apisvc, "FN_RUNNER_API_URL")
+        Rel_R(natsprocessorpod, natssvc, "")
+        Rel(natsprocessorpod, stepsvc, "")
+        Rel(natsprocessorpod, lbsvc, "")
+
+        Rel(asyncpod, natssvc, " ")
+
+    }
+
+Rel_L(uipod, apisvc, "FN_API_URL")
+
+Rel(clientapps,ingress," ")
+Rel(devopsactor,ingress," ")
+Rel_R(devopsactor,kubernetesapi," ")
+Rel(devopsactor,helmchart," ")
+Rel(ingress,lbsvc,"/")
+Rel(ingress,apisvc,"/api")
+Rel(ingress,stepsvc,"/step")
+Rel(ingress,asyncsvc,"/async")
+Rel(ingress,uisvc,"/ui")
+Rel(ingress,grafanasvc,"/grafana")
+Rel(helmchart,kubernetesapi," ")
+Rel(prometheuspod,kubernetesapi," ")
+
+}
+
+Rel(runnerpod,dockerregistry, " ")
+
+@enduml
+
+@startuml leanmu
+
+footer Mu by Olivier Refalo
+scale max 1024 width
+
+skinparam nodesep 10
+skinparam ranksep 10
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment left
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment left
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 0
+    FontColor #444444
+    BorderColor #444444
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<cluster>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BorderStyle line
+    BorderColor #326CE5
+    BackgroundColor #FFFFFF
+    RoundCorner 25
+}
+
+skinparam rectangle<<namespace>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BorderStyle line
+    BorderColor #FF4216
+    BackgroundColor #FFFFFF
+    RoundCorner 25
+}
+
+skinparam rectangle<<node>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BorderStyle line
+    BorderColor #096B24
+    BackgroundColor #FFFFFF
+    RoundCorner 25
+}
+
+skinparam rectangle<<service>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BorderStyle line
+    BorderColor #096B24
+    BackgroundColor #FFFFFF
+    RoundCorner 25
+}
+
+
+
+
+
+
+
+
+
+hide stereotype
+
+
+
+
+
+sprite $KubernetesSvc [70x66/16z] {
+rPS7aYCn30CPHUB_7xvyOx6irOYRkv9ZbmqeqZV200I_te6Vf58RnqNJmmC5EtS4dk1qWYGM3AQRQ6B5xS8KEqBsrTuXzQ2MZeS3E_R51uwHdgHIws9KaYk6
+ojZsctV60CsCdeLf0ZsBj2thOAHbgS7ucrY0TTDKcbu7WpNwuhjUOkbPaYwiRG5TPD_29PQUnSfKx5bo4KkQFi94Ek6BOE9iyre4Ws9HVy28_P7QXJwFnUP_
+6ENzQebhVZGiDPZHijHWy3gBlebbrAc8_8cHvK_-FHqa-PF_RnFbJr23yUSpDET9CkQHfDM2rrhaJIpwTh_5tYGNYjTPvFf2ts9KfsFg1NvYrzC0CCeYKtP7
+GPSiXy8UcvD7xp2LQA1KmJbEL66S4lG4xTLJSSmC4OKae1aYXW8j24mGCC8SmU24nhAU5ujIyKG8p9EtzQoBIkS09sVoqQrDS946cCDL0GxesDIpc0ekeeda
+0PHqapPuO-3tRZX2Ux9rlQhmmUpfPfD2NvmV
+}
+
+skinparam rectangle<<KubernetesSvc>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+sprite $KubernetesIng [70x66/16z] {
+rPM7ijqm24Gle0B__yE9PvmnrZ4ZfoSdzTsobdOfd_-85X5JVbxZmEt7DNgS_BYEZ5Xetwyn8qZ_BWtrA1YlZJQFYjU1MUoO-YRQ6aTW-rY8DGRFM7ROwNiT
+_0n2bOyaw_MT25M-agwznYL1Y2sDCPxoxUraETZe9x8Mmw8oRWSKZyHa4FvyfUKrZGkNEWijL5XzMamD6gCuNxyxIfp6TDvo1ckBpl128NpOsBIixbGalRJG
+CRVgI2obh7wWLrcSU3KFvktbaMqmTYtyPbsFY6Zf0vQdALp0iCz1sNK5unXhTIlgBL1DjOCvvh3bGhBlQJ3D0EdSxvzGFp38H6rKMB85zBTJSARg8eOwo0xH
+c45zlmLrAVVQ67ehWbOupsS1h53Ht4C73Pi4fQwFuXsjSBv3jrEKI6UW5T8ceKewsq6_eab1ITuaBTWlrQfhzPHIXmE5YgPM03BNixH75V5YfR78BkUWCXUp
+WQzZnAaoRjScuXXJ0fM632fx1tO0IXwB6WznlZp7ITpnRt2JmF8zt2G2oxTmaz3uboh6Zij807Eez6LM0eijDh4dGETPHZErYAQjSQmKpBYZSuY7pA7XI54-
+5GuLE_vkFK87Z2xPgp0UeeygtTAD60zfgxiHRHxkwYOU10MyHuXld4LGm5GxHmLXK3Nj0uW4OJnxUjIuVlvnlW
+}
+
+skinparam rectangle<<KubernetesIng>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+sprite $KubernetesPod [70x66/16z] {
+rPTdckCm34CfTjp_m5kdoGuYorld_SxtGW4kj7mY742DNtRye4rk4tZXlcSa3lY-e_20a1sqGSZBGLk3SRammuhITRLNQDkgPTyp2XkGuWlRA95iCcHcu0v9
+-jr4PXA4hIE1aJui6WIzOEcmrzWiBmIZ3uUG2OrQ11DiY9bXsU0Mp9IJ6_SKaN9B5z1fCZCyWIvC18-bH3GQgD1fY0ez_hJvyw1U_ljb9FKFiocFjq-M5rxI
+h53Mvk3XJe7EpqYbpuVnp3AGCbbOCBvbOS7KbeK5Wr-n68bbOI4_jZqB2IRtB2GO_9h5xbZ8aqflMkPW0YU2MhI81O-8auKv0AKMj9yiR1amRW7QPak0eCzN
+bj9tYuEoVD7d-6cnNcyE3KuQqlhA6ZDmdoINqXPDbi8z_iJc8OqRc1p1FY4d1XPeOwRkhEwZUJryYOam3S1K4stcetazVETrHKkxeqUxewHvFRme3q1B2z3K
+F9x8X7FP4l84lNYYklnzvFOnNNLhNWyloWEC8IjgRL5PqnkVLvonTVTm0fnM-S_v2W
+}
+
+skinparam rectangle<<KubernetesPod>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+sprite $KubernetesDeploy [70x66/16z] {
+rPPNWYqv24DDCcZ_2-uSAJ0ry_BvwgXh90nU_n0AmEd7DPu9MVyRmoV_KuSs4lhVDHm5jluB76ZOjusMGCVjm0GJpdEqTmWPO_an7N9CpC6N6k4UQE4R8gvl
+VqLYZLIEYv0mkf7-FkVhT2-zz3TxDevYB0bVwLBqoTyiKkDdOxY-k2HgogUYkddadtx6vIBBKQKebRoosq_6N2lbAESJ7-OMNyMp0reV9igEYjm_kJMqDoRo
+2RdjTkhxxj8hrdTxTFE1BhO4hiXWZ5uEc6V4Cxpe2HPz8WfZV531IbXb32OLxKKWoPRU5qyYrUy4OqPy65Uvm_f-sLcaD67iNKeYr-DNPwUckQHhQYxFpcLp
+2Geg9xbUbTAA81UKPrtwiHnMv67_ijh-z9TH8vKAf9phniTrhKSPmaYth7HM6MPitjCOqDFd6TrJsSd2Z2lDAd7dKHZkE5AyF2RcnrJWVo0hW_-EhKGEYl4L
+CnJu-7HV-8hQ44ynbPt55a9476h26shOp0hTmCVz71vSl64BQWY2C6A5Mb10p1cWgEF9GQr0B92ehX03sDMs05j0uPpYAVYgijqTISLKTugdW3yh4aCeHDuh
+0iGGH2cU4drpbn72l24gRB3zwYuWckAfIPbA-fuYErlZ1vLDE-tRbfZdqWrel3ttCFG4hx-SHm
+}
+
+skinparam rectangle<<KubernetesDeploy>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+sprite $KubernetesApi [70x66/16z] {
+rLU7iYCn20iT_l-7RxOaEyV88UMgNY-MXOJnvlOVGQigw6kE7IcVSrYT-9o7l1hqVOue07kBWxCMy9UDbgmLNWvCQaBm7EqhI1bZUPzdZgL2CJSE7dCuR_nM
+43oHz5mLvjRZ8jHZDENl8D-fJpcge_r7Sp0xH-V19VtC0Up7F8nOS2q4pXWqXkj2zlIsg3GO5W_c4PPoxXtma2mBagubQ3iR2fk20GlodVBWkiYp2vzjuJmS
+D8TTaOjvuDsLE9VwP4mYM-Zkknng4nf3pss9aaTDQkcEZL5u57ENxEBdFvmwU7LS4jeIP_T4rcbhQPRb9NrbJBJeQ1_qNE6oRPpCNaKuqg9Lpt7nkMLSCsDg
+Kce29UlSCWyjfhjBB4XyW0cLnqvqQD7ABBiMqXDZlFMSn_w5CZQR_Oet2HgpcYrKwHitInO_zlUdne1v75Lk6uCzgf1YFANzajTwqNTHl7q3j30OuOQkAdbS
+kNRbaYTZ0fP-0_ScvUjRWHSWDvO-CiXLien9l89OMgGd1B2WmTvwfO7nhxMnx8yDSf4sj7w60rpt4kFUIGcaDC_X11VULilYNzlTq8E2S6pYgjYO7iPxeDXX
+U-tn4qh5GNN5s3ziMtX3WYmxwatWgcbOOQyb83K0nZFdcC8SPIPiPOxZcH-StIkub2jlgRQEPmZALAYszUngotY6e4GpJfPGMyOpD1Pj9nbM56-yFd8MPrDf
+xe9uvWEd1Xf_GimiF52WeD0vdK5ldvxPcuxasp-E7m
+}
+
+skinparam rectangle<<KubernetesApi>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam rectangle {
+    StereotypeFontSize 12
+}
+
+skinparam Arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+
+
+
+
+
+
+
+hide stereotype
+
+
+
+
+
+sprite $AzureContainerRegistry [70x60/16z] {
+rPP9mkCe34OHQBx_VRkh24hm82VOgtghVtmM7vASSaOZCNCpuLPk0cm-8VMEGtoFBdlGpw0r2VivkY8Hpr1uA8bg05bKXV5QI7w5JSQMIwh_JkvHJrYvjkOP
+V9gNB9KYK0gW_gO1xwHz2sJveQulo70J_rvK3nP94wngt28ykUveypqCtI6lggXEehGO3pOB0NXwCa54fF6Wot2Zgt1NeU8s8hkqM3ZUtLBZhgM5YCqTijqK
+bggZM_gXu7EGAMjkMT-69S9vMzhdhetWwu8BYxPIvMq1Ty5-a14HN4h28hs99ajSROW4BpP2MBWKFrh8k4sY5XPTiqHFDnbPrqXssLALQXT5rdhB4fi1NwBg
+3oo2K03DdPvONdCjxlBGujrYNooH8DC3omvCB7vXeN6HoEe3iyLQRFF-gYJssLUuisXg-GlNCW5jKhbE5iujHgM3r61IVSudRmjcbZ5ezVKOKyQfheeSHL4J
+zv9OEh1RlChOtOUe2gUMndw62JMOejA_5aWiPFC75qHMorGLIw5pIwpyc82_r1QoOrXwQebb7nOW74-7YYJgmL21PNiNKFVJY48uP0qvuktVw_9CcpAM0lsK
+wbuwSdSpMBmfEcYFzai9K1zReeDui6n9-3SjLPzQWjoYzTfY-fdCr6BkcbY4THeYA1S0knyiYBfP3kKhFJRNDYpL9onMmYyqyu6Q1r720hlvaYXX5OfgOaNU
+0-Hx2ly3
+}
+
+skinparam rectangle<<AzureContainerRegistry>> {
+    BackgroundColor #FFFFFF
+    BorderColor transparent
+    Shadowing false
+}
+
+collections "Client Apps" as clientapps
+collections "Helm Charts" as helmchart
+actor "DevOps" as devopsactor
+
+Left to right direction
+
+rectangle "<color:#0072C6><$AzureContainerRegistry></color>\n\n==Docker Registry" <<AzureContainerRegistry>> as dockerregistry
+
+rectangle "==Kubernetes Cluster" <<cluster>> as cluster {
+ 
+    rectangle "<color:#0072C6><$KubernetesIng></color>\n\n==fn.mu.local" <<KubernetesIng>> as ingress
+    rectangle "<color:#0072C6><$KubernetesApi></color>\n\n==Kubernetes API" <<KubernetesApi>> as kubernetesapi
+
+    rectangle "==mu-mgmt\n<size:12>[Namespace]</size>" <<namespace>> as mgmtns {
+        rectangle "<color:#0072C6><$KubernetesSvc></color>\n\n==mu-api" <<KubernetesSvc>> as apisvc
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==mu-api" <<KubernetesPod>> as apipod
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==mysql" <<KubernetesPod>> as mysqlpod
+
+
+        apisvc - -> apipod : "===80"
+
+        apipod - -> mysqlpod : "===3306"
+
+    }
+
+    rectangle "==mu-ops\n<size:12>[Namespace]</size>" <<namespace>> as opsns {
+
+        rectangle "<color:#0072C6><$KubernetesSvc></color>\n\n==mu-ui" <<KubernetesSvc>> as uisvc
+        rectangle "<color:#0072C6><$KubernetesSvc></color>\n\n==mu-grafana" <<KubernetesSvc>> as grafanasvc
+        rectangle "<color:#0072C6><$KubernetesSvc></color>\n\n==mu-prometheus-server" <<KubernetesSvc>> as prometheussvc
+        rectangle "<color:#0072C6><$KubernetesSvc></color>\n\n==mu-loki" <<KubernetesSvc>> as lokisvc
+        rectangle "<color:#0072C6><$KubernetesSvc></color>\n\n==mu-loki-headless" <<KubernetesSvc>> as lokihlsvc
+
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==mu-ui" <<KubernetesPod>> as uipod
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==mu-grafana" <<KubernetesPod>> as grafanapod
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==mu-loki" <<KubernetesPod>> as lokipod
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==mu-vector" <<KubernetesPod>> as vectorpod
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==mu-prometheus" <<KubernetesPod>> as prometheuspod
+
+
+        uisvc - -> uipod : "===4000"
+        grafanasvc - -> grafanapod : "===80"
+        prometheussvc - -> prometheuspod : "=== "
+        lokisvc - -> lokihlsvc : "===listens"
+        lokisvc - -> lokipod : "=== "
+        
+        grafanapod - -> prometheussvc : "=== "
+        vectorpod - -> lokisvc : "=== "
+        grafanapod - -> lokisvc : "=== "
+        vectorpod - -> kubernetesapi : "===listen"
+
+
+    }
+
+    rectangle "==mu-fn\n<size:12>[Namespace]</size>" <<namespace>> as nsFn {
+        rectangle "<color:#0072C6><$KubernetesSvc></color>\n\n==mu-lb" <<KubernetesSvc>> as lbsvc
+        rectangle "<color:#0072C6><$KubernetesSvc></color>\n\n==mu-runner-headless" <<KubernetesSvc>> as runnersvc
+        rectangle "<color:#0072C6><$KubernetesSvc></color>\n\n==mu-async" <<KubernetesSvc>> as asyncsvc
+        rectangle "<color:#0072C6><$KubernetesSvc></color>\n\n==mu-step" <<KubernetesSvc>> as stepsvc
+        rectangle "<color:#0072C6><$KubernetesSvc></color>\n\n==mu-nats" <<KubernetesSvc>> as natssvc
+
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==mu-lb" <<KubernetesPod>> as lbpod
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==mu-runner" <<KubernetesPod>> as runnerpod
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==mu-async" <<KubernetesPod>> as asyncpod
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==mu-step" <<KubernetesPod>> as steppod
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==mu-nats" <<KubernetesPod>> as natspod
+        rectangle "<color:#0072C6><$KubernetesPod></color>\n\n==mu-nats-processor" <<KubernetesPod>> as natsprocessorpod
+        
+
+
+        lbsvc - -> lbpod : "===90"
+        asyncsvc - -> asyncpod : "===80"
+        stepsvc - -> steppod : "===80"
+        natssvc - -> natspod : "===6222"
+
+        lbpod - -> runnerpod : "===FN_GRPC_PORT:9191"
+        lbpod - -> runnersvc : "===listens FN_RUNNER_K8S_HEADLESS_SERVICE"
+        lbpod - -> apisvc : "===FN_RUNNER_API_URL"
+        natsprocessorpod -RIGHT-> natssvc : "==="
+        natsprocessorpod - -> stepsvc : "==="
+        natsprocessorpod - -> lbsvc : "==="
+
+        asyncpod - -> natssvc : "=== "
+
+    }
+
+uipod -LEFT-> apisvc : "===FN_API_URL"
+
+clientapps - -> ingress : "=== "
+devopsactor - -> ingress : "=== "
+devopsactor -RIGHT-> kubernetesapi : "=== "
+devopsactor - -> helmchart : "=== "
+ingress - -> lbsvc : "===/"
+ingress - -> apisvc : "===/api"
+ingress - -> stepsvc : "===/step"
+ingress - -> asyncsvc : "===/async"
+ingress - -> uisvc : "===/ui"
+ingress - -> grafanasvc : "===/grafana"
+helmchart - -> kubernetesapi : "=== "
+prometheuspod - -> kubernetesapi : "=== "
+
+}
+
+runnerpod - -> dockerregistry : "=== "
+
+@enduml
+
+PlantUML version 1.2021.8(Sat Jun 26 12:20:59 GST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

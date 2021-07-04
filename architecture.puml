@@ -1,6 +1,6 @@
-@startuml kubernetes
+@startuml leanmu
 
-footer Kubernetes Plant-UML
+footer Mu by Olivier Refalo
 scale max 1024 width
 
 skinparam nodesep 10
@@ -30,7 +30,8 @@ collections "Client Apps" as clientapps
 collections "Helm Charts" as helmchart
 actor "DevOps" as devopsactor
 
-top to bottom direction
+'top to bottom direction
+Left to right direction
 
 AzureContainerRegistry(dockerregistry, "Docker Registry", " ")
 
@@ -45,14 +46,15 @@ Cluster_Boundary(cluster, "Kubernetes Cluster") {
         KubernetesPod(apipod, "mu-api", "")
         KubernetesPod(mysqlpod, "mysql", "")
 
-        KubernetesDeploy(apideploy,"mu-api","")
-        KubernetesDeploy(mysqldeploy,"mu-mysql","")
+        ' KubernetesDeploy(apideploy,"mu-api","")
+        ' KubernetesDeploy(mysqldeploy,"mu-mysql","")
 
-        Rel(apipod,mysqlpod," ")
-        Rel_U(apideploy,apipod, "replica=1")
-        Rel_U(mysqldeploy,mysqlpod, "replica=1")
-        Rel(apisvc,apipod, " ")
+        Rel(apisvc,apipod, "80")
 
+        Rel(apipod,mysqlpod,"3306")
+
+        ' Rel(apideploy,apipod, "replica=1")
+        ' Rel(mysqldeploy,mysqlpod, "replica=1")
     }
 
     Namespace_Boundary(opsns, "mu-ops") {
@@ -69,10 +71,9 @@ Cluster_Boundary(cluster, "Kubernetes Cluster") {
         KubernetesPod(vectorpod, "mu-vector", "")
         KubernetesPod(prometheuspod, "mu-prometheus", "")
 
-        KubernetesDeploy(uideploy,"mu-ui","")
-        KubernetesDeploy(grafanadeploy,"mu-grafana","")
-        KubernetesDeploy(prometheusdeploy,"mu-prometheus-server","")
-
+        ' KubernetesDeploy(uideploy,"mu-ui","")
+        ' KubernetesDeploy(grafanadeploy,"mu-grafana","")
+        ' KubernetesDeploy(prometheusdeploy,"mu-prometheus-server","")
 
         Rel(uisvc, uipod, "4000")
         Rel(grafanasvc, grafanapod, "80")
@@ -85,12 +86,11 @@ Cluster_Boundary(cluster, "Kubernetes Cluster") {
         Rel(grafanapod,lokisvc," ")
         Rel(vectorpod, kubernetesapi, "listen")
 
-        Rel(grafanadeploy, grafanapod," ")
-        Rel(uideploy,uipod, "replica=1") 
-        Rel(prometheusdeploy, prometheuspod," ")
-        Rel(prometheusdeploy, lokipod," ")
+        ' Rel(grafanadeploy, grafanapod," ")
+        ' Rel(uideploy,uipod, "replica=1") 
+        ' Rel(prometheusdeploy, prometheuspod," ")
+        ' Rel(prometheusdeploy, lokipod," ")
 
-    
     }
 
     Namespace_Boundary(nsFn, "mu-fn") {
@@ -105,19 +105,19 @@ Cluster_Boundary(cluster, "Kubernetes Cluster") {
         KubernetesPod(asyncpod, "mu-async", "")
         KubernetesPod(steppod, "mu-step", "")
         KubernetesPod(natspod, "mu-nats", "")
+        KubernetesPod(natsprocessorpod, "mu-nats-processor", "")
         
-        KubernetesDeploy(lbdeploy,"mu-lb","")
-        KubernetesDeploy(runnerdeploy,"mu-runner","")
-        KubernetesDeploy(asyncdeploy,"mu-async","")
-        KubernetesDeploy(stepdeploy,"mu-step","")
-        KubernetesDeploy(natsdeploy,"mu-nats","")
+        ' KubernetesDeploy(lbdeploy,"mu-lb","")
+        ' KubernetesDeploy(runnerdeploy,"mu-runner","")
+        ' KubernetesDeploy(asyncdeploy,"mu-async","")
+        ' KubernetesDeploy(stepdeploy,"mu-step","")
+        ' KubernetesDeploy(natsdeploy,"mu-nats","")
 
-        Rel_U(lbdeploy,lbpod, "replica=1")
-        Rel_U(runnerdeploy,runnerpod, "replica=1")
-        Rel_U(asyncdeploy,asyncpod, "replica=1")
-        Rel_U(stepdeploy,steppod, "replica=1")
-        Rel_U(natsdeploy,natspod, "replica=1")
-
+        ' Rel(lbdeploy,lbpod, "replica=1")
+        ' Rel(runnerdeploy,runnerpod, "replica=1")
+        ' Rel(asyncdeploy,asyncpod, "replica=1")
+        ' Rel(stepdeploy,steppod, "replica=1")
+        ' Rel(natsdeploy,natspod, "replica=1")
 
         Rel(lbsvc, lbpod, "90")
         Rel(asyncsvc, asyncpod, "80")
@@ -125,14 +125,21 @@ Cluster_Boundary(cluster, "Kubernetes Cluster") {
         Rel(natssvc, natspod, "6222")
 
         Rel(lbpod, runnerpod, "FN_GRPC_PORT:9191")
-        Rel(lbpod, runnersvc, "listens")
+        Rel(lbpod, runnersvc, "listens FN_RUNNER_K8S_HEADLESS_SERVICE")
+        Rel(lbpod, apisvc, "FN_RUNNER_API_URL")
+        Rel_R(natsprocessorpod, natssvc, "")
+        Rel(natsprocessorpod, stepsvc, "")
+        Rel(natsprocessorpod, lbsvc, "")
+
         Rel(asyncpod, natssvc, " ")
 
     }
 
-    Rel(clientapps,ingress," ")
+Rel_L(uipod, apisvc, "FN_API_URL")
+
+Rel(clientapps,ingress," ")
 Rel(devopsactor,ingress," ")
-Rel(devopsactor,kubernetesapi," ")
+Rel_R(devopsactor,kubernetesapi," ")
 Rel(devopsactor,helmchart," ")
 Rel(ingress,lbsvc,"/")
 Rel(ingress,apisvc,"/api")
@@ -145,10 +152,6 @@ Rel(prometheuspod,kubernetesapi," ")
 
 }
 
-
-Rel_L(runnerpod,dockerregistry, " ")
-
-
-
+Rel(runnerpod,dockerregistry, " ")
 
 @enduml
