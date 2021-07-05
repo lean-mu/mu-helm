@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-plantuml -svg architecture.puml
+plantuml -svg leanmu.puml
