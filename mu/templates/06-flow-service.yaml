@@ -8,6 +8,7 @@ metadata:
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     heritage: {{ .Release.Service }}
     release: {{ .Release.Name }}
+    component: step
   namespace: {{ .Release.Namespace | quote }}
 {{- if .Values.fn_flow.service.annotations }}
   annotations:
@@ -21,5 +22,6 @@ spec:
       targetPort: 8081
   selector:
     app: {{ template "fullname" . }}
+    component: step
     role: flow
 {{- end }}

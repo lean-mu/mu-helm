@@ -8,6 +8,7 @@ metadata:
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     heritage: {{ .Release.Service }}
     release: {{ .Release.Name }}
+    component: ui
   namespace: {{ .Release.Namespace | quote }}
 {{- if .Values.fn_ui.service.annotations }}
   annotations:
@@ -21,5 +22,6 @@ spec:
       targetPort: {{ default "4000" .Values.fn_ui.service.port }}
   selector:
     app: {{ template "fullname" . }}
+    component: ui
     role: ui
 {{- end }}

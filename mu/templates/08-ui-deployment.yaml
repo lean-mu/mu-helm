@@ -8,12 +8,14 @@ metadata:
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     heritage: {{ .Release.Service }}
     release: {{ .Release.Name }}
+    component: ui
   namespace: {{ .Release.Namespace | quote }}
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: {{ template "fullname" . }}
+      component: ui
   template:
     metadata:
        labels:
@@ -21,6 +23,7 @@ spec:
          chart: {{ .Chart.Name }}-{{ .Chart.Version }}
          heritage: {{ .Release.Service }}
          release: {{ .Release.Name }}
+         component: ui
          role: ui
     spec:
       containers:

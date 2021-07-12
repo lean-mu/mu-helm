@@ -85,7 +85,7 @@ spec:
         backend:
           service:
             name: {{ template "fullname" . }}-lb
-            port: 
+            port:
               number: {{ .Values.fn_lb.service.port }}
 {{- end }}
 {{- if eq .Values.tls.enabled true }}

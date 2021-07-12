@@ -10,8 +10,8 @@ keywords:
 - containers
 - functions
 - serverless
-home: http://fnproject.io/
-icon: http://fnproject.io/images/fn-300x125.png
+home: https://www.snapcore.com/mu/
+icon: https://www.snapcore.com/mu/img/Logo.png
 sources:
 - https://github.com/lean-mu/mu-helm
 - https://github.com/lean-mu/mu
@@ -20,7 +20,6 @@ sources:
 maintainers:
 - name: Olivier Refalo
   email: orefalo@snapcore.com
-engine: gotpl
 dependencies:
 - name: mysql
   version: 1.6.9

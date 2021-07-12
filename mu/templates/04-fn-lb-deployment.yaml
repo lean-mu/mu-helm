@@ -7,12 +7,14 @@ metadata:
     chart: {{ .Chart.Name }}-{{ .Chart.Version }}
     heritage: {{ .Release.Service }}
     release: {{ .Release.Name }}
+    component: lb
   namespace: {{ .Release.Namespace | quote }}
 spec:
   replicas: {{ .Values.fn_lb.replicas }}
   selector:
     matchLabels:
       app: {{ template "fullname" . }}
+      component: lb
   template:
     metadata:
        labels:
@@ -21,6 +23,7 @@ spec:
          heritage: {{ .Release.Service }}
          release: {{ .Release.Name }}
          role: fn-service
+         component: lb
        annotations:
          prometheus.io/scrape: 'true'
          prometheus.io/port: {{ .Values.fn_lb.service.port | quote }}
